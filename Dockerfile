@@ -59,32 +59,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 RUN rm -f /etc/nginx/sites-enabled/default
 
 # Supervisor config — runs nginx + uvicorn
-RUN cat > /etc/supervisor/conf.d/app.conf << 'EOF'
-[supervisord]
-nodaemon=true
-user=root
-logfile=/dev/stdout
-logfile_maxbytes=0
-
-[program:nginx]
-command=nginx -g "daemon off;"
-autostart=true
-autorestart=true
-stdout_logfile=/dev/stdout
-stdout_logfile_maxbytes=0
-stderr_logfile=/dev/stderr
-stderr_logfile_maxbytes=0
-
-[program:backend]
-command=uvicorn backend.main:app --host 127.0.0.1 --port 8000 --workers 2
-directory=/app
-autostart=true
-autorestart=true
-stdout_logfile=/dev/stdout
-stdout_logfile_maxbytes=0
-stderr_logfile=/dev/stderr
-stderr_logfile_maxbytes=0
-EOF
+COPY supervisord.conf /etc/supervisor/conf.d/app.conf
 
 # Fix nginx upstream: in single-container mode, backend is on localhost, not "backend" hostname
 RUN sed -i 's|proxy_pass http://backend:8000|proxy_pass http://127.0.0.1:8000|g' /etc/nginx/conf.d/default.conf
