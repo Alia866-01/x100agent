@@ -43,8 +43,8 @@ const ROADMAP_PHASES: RoadmapPhase[] = [
         glow: 'rgba(0, 194, 255, 0.3)',
         items: ['Запуск MVP', 'Первые 500 клиентов', 'Product-Market Fit'],
         clients: 500,
-        mrr: '$45K',
-        details: 'Фокус на малый и средний бизнес в сфере услуг и e-commerce. Стартуем с WhatsApp и Telegram как основные каналы. Бесплатный тариф для первых 100 компаний в обмен на фидбек. Партнёрства с CRM-интеграторами (amoCRM, Bitrix24). Целевые отрасли: онлайн-школы, клиники, автосервисы, риелторы, beauty-сегмент. Средний чек ~$90/мес (70% Starter $50, 22% Pro $120, 8% Enterprise $350). К концу Q3 — 500 платящих клиентов, MRR $45K, ARR $540K.'
+        mrr: '9,5 млн',
+        details: 'Фокус на малый и средний бизнес в сфере услуг и e-commerce. Стартуем с WhatsApp и Telegram как основные каналы. Бесплатный тариф для первых 100 компаний в обмен на фидбек. Партнёрства с CRM-интеграторами (amoCRM, Bitrix24). Целевые отрасли: онлайн-школы, клиники, автосервисы, риелторы, beauty-сегмент. Средний чек ~19 000 ₽/мес (70% Starter 14 900 ₽, 22% Pro 24 900 ₽, 8% Enterprise 39 900 ₽). К концу Q3 — 500 платящих клиентов, MRR 9,5 млн ₽, ARR 114 млн ₽.'
     },
     {
         title: 'СНГ + Турция',
@@ -54,8 +54,8 @@ const ROADMAP_PHASES: RoadmapPhase[] = [
         glow: 'rgba(167, 139, 250, 0.3)',
         items: ['Локализация', 'Партнёрская сеть', 'Масштабирование'],
         clients: 1000,
-        mrr: '$100K',
-        details: 'Казахстан, Узбекистан, Турция — схожие бизнес-модели, высокий спрос на автоматизацию. Локализация интерфейса и агентов на казахский, узбекский, турецкий. Партнёрства с local digital-агентствами. Адаптация под местные мессенджеры. +500 клиентов в регионе, кумулятивно 1 000. Микс: 60% Starter, 30% Pro, 10% Enterprise → ARPU ~$101/мес. MRR $100K, ARR $1.2M.'
+        mrr: '20,4 млн',
+        details: 'Казахстан, Узбекистан, Турция — схожие бизнес-модели, высокий спрос на автоматизацию. Локализация интерфейса и агентов на казахский, узбекский, турецкий. Партнёрства с local digital-агентствами. Адаптация под местные мессенджеры. +500 клиентов в регионе, кумулятивно 1 000. Микс: 60% Starter, 30% Pro, 10% Enterprise → ARPU ~20 400 ₽/мес. MRR 20,4 млн ₽, ARR 245 млн ₽.'
     },
     {
         title: 'Европа',
@@ -65,8 +65,8 @@ const ROADMAP_PHASES: RoadmapPhase[] = [
         glow: 'rgba(52, 211, 153, 0.3)',
         items: ['GDPR compliance', 'EU хостинг', 'Enterprise tier'],
         clients: 1500,
-        mrr: '$180K',
-        details: 'Немецкий и французский рынки в первую очередь. GDPR-compliant инфраструктура (EU-based серверы). Enterprise-тариф с SLA, dedicated support, custom integrations. Участие в WebSummit, SaaStock Europe. Партнёрство с европейскими системными интеграторами. +500 B2B клиентов, кумулятивно 1 500. Микс: 50% Starter, 35% Pro, 15% Enterprise → ARPU ~$120/мес. MRR $180K, ARR $2.16M.'
+        mrr: '33,2 млн',
+        details: 'Немецкий и французский рынки в первую очередь. GDPR-compliant инфраструктура (EU-based серверы). Enterprise-тариф с SLA, dedicated support, custom integrations. Участие в WebSummit, SaaStock Europe. Партнёрство с европейскими системными интеграторами. +500 B2B клиентов, кумулятивно 1 500. Микс: 50% Starter, 35% Pro, 15% Enterprise → ARPU ~22 150 ₽/мес. MRR 33,2 млн ₽, ARR 399 млн ₽.'
     },
     {
         title: 'США',
@@ -76,8 +76,8 @@ const ROADMAP_PHASES: RoadmapPhase[] = [
         glow: 'rgba(251, 191, 36, 0.3)',
         items: ['US entity', 'SOC2', 'Series A ready'],
         clients: 3000,
-        mrr: '$350K',
-        details: 'Регистрация US entity (Delaware C-Corp). SOC2 Type II сертификация. Найм US-based sales team (2-3 человека). Фокус на SMB в vertical SaaS: real estate, healthcare, legal, финтех. Листинг на G2, Capterra, Product Hunt. Интеграция с Intercom, Zendesk, Freshdesk как "AI layer". +1 500 клиентов, кумулятивно 3 000. Микс: 55% Starter, 30% Pro, 15% Enterprise → ARPU ~$116/мес. MRR $350K, ARR $4.2M. Готовность к Series A на $3-5M.'
+        mrr: '65 млн',
+        details: 'Регистрация US entity (Delaware C-Corp). SOC2 Type II сертификация. Найм US-based sales team (2-3 человека). Фокус на SMB в vertical SaaS: real estate, healthcare, legal, финтех. Листинг на G2, Capterra, Product Hunt. Интеграция с Intercom, Zendesk, Freshdesk как "AI layer". +1 500 клиентов, кумулятивно 3 000. Микс: 55% Starter, 30% Pro, 15% Enterprise → ARPU ~21 650 ₽/мес. MRR 65 млн ₽, ARR 780 млн ₽. Готовность к Series A на 300-500 млн ₽.'
     },
 ];
 
@@ -85,7 +85,7 @@ const MARKETING_CHANNELS: MarketingChannel[] = [
     {
         name: 'Контент-ферма',
         icon: '📝',
-        budget: '$2-5K/мес',
+        budget: '200-500 тыс ₽/мес',
         roi: '5-8x за 6 мес',
         tactics: [
             'SEO-блог: 20+ статей/мес по ключам "AI для бизнеса", "автоматизация продаж"',
@@ -99,27 +99,27 @@ const MARKETING_CHANNELS: MarketingChannel[] = [
     {
         name: 'Инфлюенс-маркетинг',
         icon: '🎯',
-        budget: '$3-8K/мес',
+        budget: '300-800 тыс ₽/мес',
         roi: '3-5x',
         tactics: [
             'Микро-инфлюенсеры (10-100K): бизнес-блогеры, маркетологи — CPA-модель',
             'YouTube-обзорщики: tech-блогеры с фокусом на SaaS и AI-инструменты',
             'Telegram-каналы: размещения в бизнес/маркетинг каналах (50-200K подписчиков)',
             'Twitter/X: AI-комьюнити, треды о продукте от нишевых экспертов',
-            'Подкасты: спонсорство бизнес-подкастов (CPM $25-50)',
+            'Подкасты: спонсорство бизнес-подкастов (CPM 2 500-5 000 ₽)',
             'Affiliate-программа: 20-30% рекуррентная комиссия для партнёров',
         ],
     },
     {
         name: 'Performance-маркетинг',
         icon: '📈',
-        budget: '$5-15K/мес',
+        budget: '500 тыс - 1,5 млн ₽/мес',
         roi: '2-4x',
         tactics: [
-            'Google Ads: поиск по коммерческим запросам (CPC $1-3)',
+            'Google Ads: поиск по коммерческим запросам (CPC 100-300 ₽)',
             'Meta Ads: ретаргетинг + lookalike по базе лидов',
-            'LinkedIn Ads: B2B таргетинг на decision-makers (CPC $5-12)',
-            'Яндекс.Директ: для российского рынка (CPC $0.5-2)',
+            'LinkedIn Ads: B2B таргетинг на decision-makers (CPC 500-1 200 ₽)',
+            'Яндекс.Директ: для российского рынка (CPC 50-200 ₽)',
             'Product Hunt: launch + follow-up campaign',
             'G2/Capterra: спонсированные листинги + отзывы',
         ],
@@ -127,7 +127,7 @@ const MARKETING_CHANNELS: MarketingChannel[] = [
     {
         name: 'Community & PLG',
         icon: '🌱',
-        budget: '$1-3K/мес',
+        budget: '100-300 тыс ₽/мес',
         roi: '10-15x (long-term)',
         tactics: [
             'Freemium тариф: 1 агент бесплатно навсегда → viral loop',
@@ -200,7 +200,7 @@ const ExpandableCard: React.FC<{
                             {/* MRR & Clients badges — always visible */}
                             <div className="hidden sm:flex items-center gap-3">
                                 <div className="text-right">
-                                    <p className="text-lg font-bold" style={{ color: phase.color }}>{phase.mrr}</p>
+                                    <p className="text-lg font-bold" style={{ color: phase.color }}>{phase.mrr} ₽</p>
                                     <p className="text-[9px] font-mono text-white/30 uppercase">MRR</p>
                                 </div>
                                 <div className="w-px h-8 bg-white/10" />
@@ -217,7 +217,7 @@ const ExpandableCard: React.FC<{
 
                     {/* MRR on mobile (below title) */}
                     <div className="flex sm:hidden gap-4 mb-3">
-                        <span className="text-sm font-bold" style={{ color: phase.color }}>MRR {phase.mrr}</span>
+                        <span className="text-sm font-bold" style={{ color: phase.color }}>MRR {phase.mrr} ₽</span>
                         <span className="text-sm text-white/50">{phase.clients.toLocaleString('ru-RU')} клиентов</span>
                     </div>
 
@@ -241,9 +241,9 @@ const ExpandableCard: React.FC<{
 
 // --- Pricing tiers ---
 const PRICING_TIERS = [
-    { name: 'Starter', price: 50, color: '#00C2FF', desc: '1 агент, 500 сообщений/мес' },
-    { name: 'Pro', price: 120, color: '#A78BFA', desc: '5 агентов, 5 000 сообщений/мес' },
-    { name: 'Enterprise', price: 350, color: '#34D399', desc: '∞ агентов, ∞ сообщений, SLA' },
+    { name: 'Starter', price: 14900, color: '#00C2FF', desc: '1 агент, 500 сообщений/мес' },
+    { name: 'Pro', price: 24900, color: '#A78BFA', desc: '5 агентов, 5 000 сообщений/мес' },
+    { name: 'Enterprise', price: 39900, color: '#34D399', desc: '∞ агентов, ∞ сообщений, SLA' },
 ];
 
 // --- Revenue & Expenses Infographic ---
@@ -256,7 +256,7 @@ const RevenueExpensesBlock: React.FC<{ clients: number; tierMix: number[]; warmC
     const proClients = Math.round(totalClients * nP);
     const enterpriseClients = Math.max(0, totalClients - starterClients - proClients);
 
-    const revenue = starterClients * 50 + proClients * 120 + enterpriseClients * 350;
+    const revenue = starterClients * 14900 + proClients * 24900 + enterpriseClients * 39900;
 
     // Expenses breakdown
     const infra = Math.round(revenue * 0.10);        // 10% infrastructure (servers, DB, APIs)
@@ -285,17 +285,17 @@ const RevenueExpensesBlock: React.FC<{ clients: number; tierMix: number[]; warmC
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
                 <div className="text-center md:text-left">
                     <p className="text-xs font-mono uppercase tracking-widest text-white/30 mb-2">Доход / мес</p>
-                    <p className="text-4xl md:text-5xl font-bold text-[#34D399]">${revenue.toLocaleString('ru-RU')}</p>
+                    <p className="text-4xl md:text-5xl font-bold text-[#34D399]">{revenue.toLocaleString('ru-RU')} ₽</p>
                     <p className="text-sm text-white/30 mt-1">{totalClients} клиентов</p>
                 </div>
                 <div className="text-center md:text-left">
                     <p className="text-xs font-mono uppercase tracking-widest text-white/30 mb-2">Расходы / мес</p>
-                    <p className="text-4xl md:text-5xl font-bold text-[#FB7185]">${totalExpenses.toLocaleString('ru-RU')}</p>
+                    <p className="text-4xl md:text-5xl font-bold text-[#FB7185]">{totalExpenses.toLocaleString('ru-RU')} ₽</p>
                     <p className="text-sm text-white/30 mt-1">{100 - margin}% от дохода</p>
                 </div>
                 <div className="text-center md:text-left">
                     <p className="text-xs font-mono uppercase tracking-widest text-white/30 mb-2">Прибыль / мес</p>
-                    <p className={`text-4xl md:text-5xl font-bold ${profit >= 0 ? 'text-[#FBBF24]' : 'text-red-400'}`}>${profit.toLocaleString('ru-RU')}</p>
+                    <p className={`text-4xl md:text-5xl font-bold ${profit >= 0 ? 'text-[#FBBF24]' : 'text-red-400'}`}>{profit.toLocaleString('ru-RU')} ₽</p>
                     <p className="text-sm text-white/30 mt-1">Маржа {margin}%</p>
                 </div>
             </div>
@@ -305,9 +305,9 @@ const RevenueExpensesBlock: React.FC<{ clients: number; tierMix: number[]; warmC
                 <p className="text-xs font-mono uppercase tracking-widest text-white/30 mb-3">Структура дохода по тарифам</p>
                 <div className="h-12 rounded-xl overflow-hidden flex relative">
                     {[
-                        { count: starterClients, price: 50, color: '#00C2FF', name: 'Starter' },
-                        { count: proClients, price: 120, color: '#A78BFA', name: 'Pro' },
-                        { count: enterpriseClients, price: 350, color: '#34D399', name: 'Enterprise' },
+                        { count: starterClients, price: 14900, color: '#00C2FF', name: 'Starter' },
+                        { count: proClients, price: 24900, color: '#A78BFA', name: 'Pro' },
+                        { count: enterpriseClients, price: 39900, color: '#34D399', name: 'Enterprise' },
                     ].map((t, i) => {
                         const rev = t.count * t.price;
                         const pct = revenue > 0 ? (rev / revenue) * 100 : 0;
@@ -322,7 +322,7 @@ const RevenueExpensesBlock: React.FC<{ clients: number; tierMix: number[]; warmC
                                 }}
                             >
                                 <span className="text-xs font-bold text-white whitespace-nowrap drop-shadow-md">
-                                    {t.name} · ${rev.toLocaleString('ru-RU')}
+                                    {t.name} · {rev.toLocaleString('ru-RU')} ₽
                                 </span>
                             </div>
                         ) : null;
@@ -331,7 +331,7 @@ const RevenueExpensesBlock: React.FC<{ clients: number; tierMix: number[]; warmC
                 <div className="flex justify-between mt-2">
                     {PRICING_TIERS.map((t, i) => (
                         <span key={i} className="text-[10px] font-mono" style={{ color: t.color }}>
-                            {t.name}: {[starterClients, proClients, enterpriseClients][i]} клиентов × ${t.price}
+                            {t.name}: {[starterClients, proClients, enterpriseClients][i]} кл. × {t.price.toLocaleString('ru-RU')} ₽
                         </span>
                     ))}
                 </div>
@@ -353,7 +353,7 @@ const RevenueExpensesBlock: React.FC<{ clients: number; tierMix: number[]; warmC
                                         background: `linear-gradient(90deg, ${exp.color}35, ${exp.color}15)`,
                                     }}
                                 >
-                                    <span className="text-sm font-bold text-white whitespace-nowrap">${exp.value.toLocaleString('ru-RU')}</span>
+                                    <span className="text-sm font-bold text-white whitespace-nowrap">{exp.value.toLocaleString('ru-RU')} ₽</span>
                                 </div>
                             </div>
                             <span className="text-xs font-mono text-white/25 w-10 text-right">{exp.pct}%</span>
@@ -400,7 +400,7 @@ const UnitEconomicsCalc: React.FC = () => {
     const [proPct, setProPct] = useState(35);                  // % on Pro plan
     const [enterprisePct, setEnterprisePct] = useState(25);    // % on Enterprise plan
     const [churnMonthly, setChurnMonthly] = useState(5);
-    const [cac, setCac] = useState(35);
+    const [cac, setCac] = useState(3500);
 
     // Cold funnel derived values
     const clicks = Math.round(views * ctr / 100);
@@ -418,11 +418,11 @@ const UnitEconomicsCalc: React.FC = () => {
     const proClients = Math.round(totalClients * normPro);
     const enterpriseClients = Math.max(0, totalClients - starterClients - proClients);
 
-    const mrr = starterClients * 50 + proClients * 120 + enterpriseClients * 350;
+    const mrr = starterClients * 14900 + proClients * 24900 + enterpriseClients * 39900;
     const arr = mrr * 12;
     const arpu = totalClients > 0 ? Math.round(mrr / totalClients) : 0;
     const ltv = churnMonthly > 0 ? Math.round(arpu / (churnMonthly / 100)) : 0;
-    // Blended CAC: cold clients pay full CAC, warm clients pay $0
+    // Blended CAC: cold clients pay full CAC, warm clients pay 0 ₽
     const blendedCac = totalClients > 0 ? Math.round((coldClients * cac) / totalClients) : cac;
     const ltvCacRatio = blendedCac > 0 ? ltv / blendedCac : 0;
     const paybackMonths = arpu > 0 ? blendedCac / arpu : 0;
@@ -496,18 +496,18 @@ const UnitEconomicsCalc: React.FC = () => {
 
                     <div className="rounded-xl p-4 bg-[#FBBF24]/[0.05] border border-[#FBBF24]/15 mb-6">
                         <p className="text-xs text-[#FBBF24]/70">
-                            💡 Тёплые клиенты — база контактов инвестора, которые уже доверяют. CAC ≈ $0 (экономия <span className="font-bold text-[#FBBF24]">${warmSavings.toLocaleString('ru-RU')}</span>)
+                            💡 Тёплые клиенты — база контактов инвестора, которые уже доверяют. CAC ≈ 0 ₽ (экономия <span className="font-bold text-[#FBBF24]">{warmSavings.toLocaleString('ru-RU')} ₽</span>)
                         </p>
                     </div>
 
                     <p className="text-xs text-white/30 font-mono uppercase tracking-wider mb-4 mt-6">Распределение по тарифам</p>
-                    <InputSlider label="Starter ($50/мес)" value={starterPct} onChange={setStarterPct} min={0} max={100} step={5} suffix="%" color="#00C2FF" />
-                    <InputSlider label="Pro ($120/мес)" value={proPct} onChange={setProPct} min={0} max={100} step={5} suffix="%" color="#A78BFA" />
-                    <InputSlider label="Enterprise ($350/мес)" value={enterprisePct} onChange={setEnterprisePct} min={0} max={100} step={5} suffix="%" color="#34D399" />
+                    <InputSlider label="Starter (14 900 ₽/мес)" value={starterPct} onChange={setStarterPct} min={0} max={100} step={5} suffix="%" color="#00C2FF" />
+                    <InputSlider label="Pro (24 900 ₽/мес)" value={proPct} onChange={setProPct} min={0} max={100} step={5} suffix="%" color="#A78BFA" />
+                    <InputSlider label="Enterprise (39 900 ₽/мес)" value={enterprisePct} onChange={setEnterprisePct} min={0} max={100} step={5} suffix="%" color="#34D399" />
 
                     <p className="text-xs text-white/30 font-mono uppercase tracking-wider mb-4 mt-6">Экономика</p>
                     <InputSlider label="Отток клиентов" value={churnMonthly} onChange={setChurnMonthly} min={1} max={15} step={0.5} suffix="%/мес" color="#FB7185" />
-                    <InputSlider label="CAC холодного клиента" value={cac} onChange={setCac} min={5} max={200} step={5} prefix="$" color="#A78BFA" hint="тёплые = $0" />
+                    <InputSlider label="CAC холодного клиента" value={cac} onChange={setCac} min={500} max={20000} step={500} suffix=" ₽" color="#A78BFA" hint="тёплые = 0 ₽" />
                 </div>
 
                 {/* Right: Key Results */}
@@ -525,8 +525,8 @@ const UnitEconomicsCalc: React.FC = () => {
                                 }}
                             >
                                 <p className="text-[10px] font-mono uppercase tracking-widest mb-1" style={{ color: tier.color }}>{tier.name}</p>
-                                <p className="text-3xl font-bold text-white">${tier.price}</p>
-                                <p className="text-[10px] text-white/30">/мес</p>
+                                <p className="text-2xl font-bold text-white">{tier.price.toLocaleString('ru-RU')}</p>
+                                <p className="text-[10px] text-white/30">₽/мес</p>
                                 <div className="mt-2 text-sm font-bold" style={{ color: tier.color }}>
                                     {[starterClients, proClients, enterpriseClients][i].toLocaleString('ru-RU')} кл.
                                 </div>
@@ -537,8 +537,8 @@ const UnitEconomicsCalc: React.FC = () => {
                     {/* Big numbers */}
                     <div className="grid grid-cols-2 gap-4">
                         {[
-                            { label: 'MRR', value: `$${mrr.toLocaleString('ru-RU')}`, sub: 'Ежемесячный доход', color: '#00C2FF' },
-                            { label: 'ARR', value: `$${arr.toLocaleString('ru-RU')}`, sub: 'Годовой доход', color: '#34D399' },
+                            { label: 'MRR', value: `${mrr.toLocaleString('ru-RU')} ₽`, sub: 'Ежемесячный доход', color: '#00C2FF' },
+                            { label: 'ARR', value: `${arr.toLocaleString('ru-RU')} ₽`, sub: 'Годовой доход', color: '#34D399' },
                         ].map(m => (
                             <div key={m.label} className="rounded-2xl p-6 border transition-all duration-300 hover:scale-[1.02]" style={{
                                 background: `linear-gradient(135deg, ${m.color}08, ${m.color}03)`,
@@ -556,7 +556,7 @@ const UnitEconomicsCalc: React.FC = () => {
                     <div className="grid grid-cols-2 gap-4">
                         <div className="rounded-2xl p-5 border border-white/[0.06] bg-white/[0.02]">
                             <p className="text-xs font-mono uppercase tracking-widest text-white/30 mb-2">Средний чек (ARPU)</p>
-                            <p className="text-3xl font-bold text-white">${arpu}</p>
+                            <p className="text-3xl font-bold text-white">{arpu.toLocaleString('ru-RU')} ₽</p>
                             <p className="text-xs text-white/25 mt-1">в месяц на клиента</p>
                         </div>
                         <div className="rounded-2xl p-5 border border-white/[0.06] bg-white/[0.02]">
@@ -577,7 +577,7 @@ const UnitEconomicsCalc: React.FC = () => {
                         </div>
                         <div className="rounded-2xl p-5 border border-white/[0.06] bg-white/[0.02]">
                             <p className="text-[10px] font-mono uppercase tracking-widest text-white/30 mb-1">LTV</p>
-                            <p className="text-2xl font-bold text-[#A78BFA]">${ltv.toLocaleString('ru-RU')}</p>
+                            <p className="text-2xl font-bold text-[#A78BFA]">{ltv.toLocaleString('ru-RU')} ₽</p>
                             <p className="text-[10px] text-white/25 mt-0.5">за жизнь клиента</p>
                         </div>
                         <div className="rounded-2xl p-5 border transition-all duration-300" style={{
@@ -598,9 +598,9 @@ const UnitEconomicsCalc: React.FC = () => {
                                 <div>
                                     <p className="text-sm font-semibold text-[#FBBF24]">Эффект тёплых клиентов</p>
                                     <p className="text-xs text-white/40 mt-0.5">
-                                        Экономия на привлечении: <span className="text-[#FBBF24] font-bold">${warmSavings.toLocaleString('ru-RU')}</span> ·
-                                        MRR от тёплых: <span className="text-[#FBBF24] font-bold">${(Math.round(warmClients * arpu)).toLocaleString('ru-RU')}</span>/мес ·
-                                        Средний CAC (blended): <span className="text-[#FBBF24] font-bold">${blendedCac}</span>
+                                        Экономия на привлечении: <span className="text-[#FBBF24] font-bold">{warmSavings.toLocaleString('ru-RU')} ₽</span> ·
+                                        MRR от тёплых: <span className="text-[#FBBF24] font-bold">{(Math.round(warmClients * arpu)).toLocaleString('ru-RU')} ₽</span>/мес ·
+                                        Средний CAC (blended): <span className="text-[#FBBF24] font-bold">{blendedCac.toLocaleString('ru-RU')} ₽</span>
                                     </p>
                                 </div>
                             </div>
@@ -809,14 +809,14 @@ const InvestorDeck: React.FC = () => {
                             <h3 className="text-lg font-serif text-white mb-2 flex items-center gap-2">
                                 <span className="text-xl">💰</span> Бюджет маркетинга по месяцам
                             </h3>
-                            <p className="text-xs text-white/30 mb-6">Распределение расходов по каналам привлечения ($/мес)</p>
+                            <p className="text-xs text-white/30 mb-6">Распределение расходов по каналам привлечения (₽/мес)</p>
 
                             {(() => {
                                 const budgetData = [
-                                    { name: 'Контент', min: 2000, max: 5000, avg: 3500, color: '#00C2FF', icon: '📝' },
-                                    { name: 'Инфлюенсеры', min: 3000, max: 8000, avg: 5500, color: '#A78BFA', icon: '🎯' },
-                                    { name: 'Performance', min: 5000, max: 15000, avg: 10000, color: '#FB7185', icon: '📈' },
-                                    { name: 'Community', min: 1000, max: 3000, avg: 2000, color: '#34D399', icon: '🌱' },
+                                    { name: 'Контент', min: 200000, max: 500000, avg: 350000, color: '#00C2FF', icon: '📝' },
+                                    { name: 'Инфлюенсеры', min: 300000, max: 800000, avg: 550000, color: '#A78BFA', icon: '🎯' },
+                                    { name: 'Performance', min: 500000, max: 1500000, avg: 1000000, color: '#FB7185', icon: '📈' },
+                                    { name: 'Community', min: 100000, max: 300000, avg: 200000, color: '#34D399', icon: '🌱' },
                                 ];
                                 const totalMin = budgetData.reduce((s, b) => s + b.min, 0);
                                 const totalMax = budgetData.reduce((s, b) => s + b.max, 0);
@@ -848,10 +848,10 @@ const InvestorDeck: React.FC = () => {
                                                                     background: `linear-gradient(90deg, ${b.color}40, ${b.color}20)`,
                                                                 }}
                                                             >
-                                                                <span className="text-sm font-bold text-white whitespace-nowrap drop-shadow">${b.avg.toLocaleString('ru-RU')}</span>
+                                                                <span className="text-sm font-bold text-white whitespace-nowrap drop-shadow">{b.avg.toLocaleString('ru-RU')} ₽</span>
                                                             </div>
                                                         </div>
-                                                        <span className="text-[10px] font-mono text-white/25 w-28 text-right">${b.min.toLocaleString('ru-RU')} – ${b.max.toLocaleString('ru-RU')}</span>
+                                                        <span className="text-[10px] font-mono text-white/25 w-32 text-right">{b.min.toLocaleString('ru-RU')} – {b.max.toLocaleString('ru-RU')} ₽</span>
                                                     </div>
                                                 </div>
                                             ))}
@@ -865,8 +865,8 @@ const InvestorDeck: React.FC = () => {
                                                     <span className="text-sm font-semibold text-white">Итого в месяц</span>
                                                 </div>
                                                 <div className="text-right">
-                                                    <span className="text-2xl font-bold text-white">${totalAvg.toLocaleString('ru-RU')}</span>
-                                                    <span className="text-xs text-white/30 ml-2">(${totalMin.toLocaleString('ru-RU')} – ${totalMax.toLocaleString('ru-RU')})</span>
+                                                    <span className="text-2xl font-bold text-white">{totalAvg.toLocaleString('ru-RU')} ₽</span>
+                                                    <span className="text-xs text-white/30 ml-2">({totalMin.toLocaleString('ru-RU')} – {totalMax.toLocaleString('ru-RU')} ₽)</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -955,7 +955,7 @@ const InvestorDeck: React.FC = () => {
                                             ['Monthly Churn', '>8%', '3-5%', '<2%'],
                                             ['Net Revenue Retention', '<90%', '100-120%', '>130%'],
                                             ['Gross Margin', '<70%', '75-85%', '>85%'],
-                                            ['CAC (SMB)', '>$200', '$50-100', '<$30'],
+                                            ['CAC (SMB)', '>20 000 ₽', '5 000-10 000 ₽', '<3 000 ₽'],
                                         ].map(row => (
                                             <tr key={row[0]} className="border-b border-white/[0.03]">
                                                 <td className="py-3 text-white/50 font-medium">{row[0]}</td>
