@@ -1,0 +1,39 @@
+# Stage 1: Build
+FROM node:20-alpine AS build
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+RUN npm ci
+
+COPY . .
+
+# Build args become VITE_ env vars at build time
+ARG VITE_API_URL
+ARG VITE_APP_URL
+ARG VITE_NEON_AUTH_URL
+ARG VITE_ENABLE_ANALYTICS=false
+ARG VITE_ENABLE_STRIPE=false
+ARG GEMINI_API_KEY
+
+ENV VITE_API_URL=$VITE_API_URL
+ENV VITE_APP_URL=$VITE_APP_URL
+ENV VITE_NEON_AUTH_URL=$VITE_NEON_AUTH_URL
+ENV VITE_ENABLE_ANALYTICS=$VITE_ENABLE_ANALYTICS
+ENV VITE_ENABLE_STRIPE=$VITE_ENABLE_STRIPE
+ENV GEMINI_API_KEY=$GEMINI_API_KEY
+
+RUN npm run build
+
+# Stage 2: Serve with nginx
+FROM nginx:alpine
+
+# Remove default config
+RUN rm /etc/nginx/conf.d/default.conf
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/dist /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

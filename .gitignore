@@ -39,3 +39,25 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# build output
+/dist
+
+# IDE / editor
+.vscode/
+.idea/
+
+# AI agent configs
+.agent/
+.agents/
+.claude/
+.gemini/
+.kiro/
+.mcp.json
+.firecrawl/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

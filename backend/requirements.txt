@@ -1,0 +1,50 @@
+# Core Framework
+agno
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
+
+# AI & LLM
+openai  # Compatible with OpenRouter via base_url
+
+# Composio Tool Router (NEW - simplified integration with Claude Agent SDK)
+composio-core
+composio-claude-agent-sdk
+claude-agent-sdk
+
+# Legacy Composio (можно удалить после полной миграции на Tool Router)
+composio
+composio-openai
+
+# Database & Vector Store
+asyncpg  # Async PostgreSQL driver for FastAPI
+pgvector
+sqlalchemy  # Для Better Auth adapter
+
+# Cache & Queues
+redis
+
+# Note: Orchestration is handled by Motia (separate service in /ai-01/)
+# No need for Celery - Motia uses BullMQ for queue management
+
+# Document Processing
+PyPDF2
+python-docx
+langchain-text-splitters
+
+# HTTP & Utilities
+requests
+httpx  # Async HTTP client for Motia integration
+python-multipart  # For file uploads
+
+# JWT & Auth
+PyJWT[crypto]  # JWT token verification with cryptography support
+
+# Monitoring & Logging
+langfuse
+
+# Analytics (ClickHouse)
+clickhouse-driver
+clickhouse-sqlalchemy
+bcrypt==4.2.1
