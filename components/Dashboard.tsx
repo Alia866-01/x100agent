@@ -86,27 +86,27 @@ interface Message {
 // --- Constants ---
 const AGENT_TEMPLATES = [
     {
-        name: "Sales Manager",
-        role: "Revenue Growth",
-        description: "Qualifies leads, handles objections, and closes deals on WhatsApp & Telegram. Expert in funnel management.",
+        name: "Менеджер продаж",
+        role: "Рост выручки",
+        description: "Квалифицирует лиды, отрабатывает возражения и закрывает сделки в WhatsApp и Telegram. Эксперт в управлении воронкой продаж.",
         image: 'https://api.dicebear.com/9.x/notionists/svg?seed=Felix'
     },
     {
-        name: "Support Specialist",
-        role: "Customer Success",
-        description: "Resolves tickets, tracks orders, and answers FAQs instantly 24/7. Connects to your knowledge base.",
+        name: "Специалист поддержки",
+        role: "Успех клиентов",
+        description: "Решает обращения, отслеживает заказы и мгновенно отвечает на частые вопросы 24/7. Подключается к вашей базе знаний.",
         image: 'https://api.dicebear.com/9.x/notionists/svg?seed=Aneka'
     },
     {
-        name: "Receptionist",
-        role: "Front Desk",
-        description: "Manages calendar, books appointments, and sends reminders to reduce no-shows. Integrates with Google Calendar.",
+        name: "Администратор",
+        role: "Ресепшен",
+        description: "Управляет календарём, записывает клиентов на приём и отправляет напоминания для снижения пропусков. Интегрируется с Google Calendar.",
         image: 'https://api.dicebear.com/9.x/notionists/svg?seed=Bella'
     },
     {
-        name: "HR Recruiter",
-        role: "Talent Acquisition",
-        description: "Screens resumes, conducts initial interviews, and schedules meetings with top candidates automatically.",
+        name: "HR-рекрутер",
+        role: "Подбор персонала",
+        description: "Отбирает резюме, проводит первичные интервью и автоматически назначает встречи с лучшими кандидатами.",
         image: 'https://api.dicebear.com/9.x/notionists/svg?seed=Zack'
     }
 ];
@@ -129,8 +129,8 @@ const INITIAL_AGENTS: Agent[] = [
     {
         id: 'agent-1',
         name: 'Alex',
-        role: 'Sales Manager',
-        description: 'Qualifies inbound leads, handles objections, books demo calls.',
+        role: 'Менеджер продаж',
+        description: 'Квалифицирует входящие лиды, отрабатывает возражения, записывает на демо-звонки.',
         status: 'active',
         stats: { conversations: 1240, leads: 85 },
         image: 'https://api.dicebear.com/9.x/notionists/svg?seed=Felix',
@@ -140,85 +140,85 @@ const INITIAL_AGENTS: Agent[] = [
             { id: 'email', name: 'Email (SMTP)', status: 'connected', messages: 920, icon: '📧' },
         ],
         knowledge: [
-            { id: 'kb1', name: 'Product_Pricing_2026.pdf', size: '2.4 MB', type: 'PDF', synced: '2h ago', status: 'synced' },
-            { id: 'kb4', name: 'Sales_Scripts_v3.pdf', size: '560 KB', type: 'PDF', synced: 'Just now', status: 'processing' },
-            { id: 'kb5', name: 'Objection_Handling.docx', size: '340 KB', type: 'DOCX', synced: '1d ago', status: 'synced' },
+            { id: 'kb1', name: 'Product_Pricing_2026.pdf', size: '2.4 MB', type: 'PDF', synced: '2 ч назад', status: 'synced' },
+            { id: 'kb4', name: 'Sales_Scripts_v3.pdf', size: '560 KB', type: 'PDF', synced: 'Только что', status: 'processing' },
+            { id: 'kb5', name: 'Objection_Handling.docx', size: '340 KB', type: 'DOCX', synced: '1 д назад', status: 'synced' },
         ],
         recentConversations: [
-            { id: 'c1', customer: 'Elena K.', channel: 'WhatsApp', lastMsg: 'Thank you! I will proceed with the order.', time: '5m ago', status: 'resolved', messages: [
-                { id: 'm1', sender: 'customer', text: 'Hi, I saw your enterprise plan. Can you tell me more about pricing?', time: '10:02 AM' },
-                { id: 'm2', sender: 'agent', text: 'Of course! Our enterprise plan starts at $299/month and includes unlimited agents, priority support, and custom integrations. Would you like me to send a detailed breakdown?', time: '10:03 AM' },
-                { id: 'm3', sender: 'customer', text: 'Yes please, that would be great.', time: '10:05 AM' },
-                { id: 'm4', sender: 'agent', text: 'I\'ve just sent it to your email. Let me know if you have any questions!', time: '10:06 AM' },
-                { id: 'm5', sender: 'customer', text: 'Thank you! I will proceed with the order.', time: '10:08 AM' },
+            { id: 'c1', customer: 'Елена К.', channel: 'WhatsApp', lastMsg: 'Спасибо! Готова оформить заказ.', time: '5 мин назад', status: 'resolved', messages: [
+                { id: 'm1', sender: 'customer', text: 'Добрый день! Видела ваш корпоративный тариф. Расскажите подробнее о ценах?', time: '10:02' },
+                { id: 'm2', sender: 'agent', text: 'Конечно! Корпоративный тариф начинается от 27 900 ₽/мес и включает неограниченное количество агентов, приоритетную поддержку и индивидуальные интеграции. Хотите, чтобы я выслала подробный расчёт?', time: '10:03' },
+                { id: 'm3', sender: 'customer', text: 'Да, пожалуйста, буду благодарна.', time: '10:05' },
+                { id: 'm4', sender: 'agent', text: 'Только что отправила на вашу почту. Если возникнут вопросы — пишите!', time: '10:06' },
+                { id: 'm5', sender: 'customer', text: 'Спасибо! Готова оформить заказ.', time: '10:08' },
             ]},
-            { id: 'c3', customer: 'Maria S.', channel: 'Telegram', lastMsg: 'Can you schedule a demo for next week?', time: '28m ago', status: 'active', messages: [
-                { id: 'm1', sender: 'customer', text: 'Hello! I\'m interested in your AI workforce platform.', time: '9:30 AM' },
-                { id: 'm2', sender: 'agent', text: 'Welcome, Maria! I\'d love to show you what we can do. Are you looking for a specific use case?', time: '9:31 AM' },
-                { id: 'm3', sender: 'customer', text: 'Yes, we need automated customer support for our e-commerce store.', time: '9:33 AM' },
-                { id: 'm4', sender: 'agent', text: 'Perfect, we have several clients in e-commerce. I can walk you through a live demo. Would next Tuesday or Wednesday work?', time: '9:34 AM' },
-                { id: 'm5', sender: 'customer', text: 'Can you schedule a demo for next week?', time: '9:36 AM' },
+            { id: 'c3', customer: 'Мария С.', channel: 'Telegram', lastMsg: 'Можете записать меня на демо на следующей неделе?', time: '28 мин назад', status: 'active', messages: [
+                { id: 'm1', sender: 'customer', text: 'Здравствуйте! Меня интересует ваша платформа с ИИ-сотрудниками.', time: '9:30' },
+                { id: 'm2', sender: 'agent', text: 'Добро пожаловать, Мария! С удовольствием покажу наши возможности. Есть конкретная задача, которую хотите решить?', time: '9:31' },
+                { id: 'm3', sender: 'customer', text: 'Да, нам нужна автоматизированная поддержка клиентов для интернет-магазина.', time: '9:33' },
+                { id: 'm4', sender: 'agent', text: 'Отлично, у нас есть несколько клиентов из e-commerce. Могу провести живое демо. Вам удобно во вторник или среду?', time: '9:34' },
+                { id: 'm5', sender: 'customer', text: 'Можете записать меня на демо на следующей неделе?', time: '9:36' },
             ]},
-            { id: 'c5', customer: 'Sophie B.', channel: 'WhatsApp', lastMsg: 'This is not what I ordered.', time: '2h ago', status: 'escalated', messages: [
-                { id: 'm1', sender: 'customer', text: 'Hi, I received my package but the items are wrong.', time: '8:15 AM' },
-                { id: 'm2', sender: 'agent', text: 'I\'m sorry to hear that, Sophie. Could you share your order number so I can look into this?', time: '8:16 AM' },
-                { id: 'm3', sender: 'customer', text: 'Order #X100-4829. I ordered the Pro plan setup but received Basic.', time: '8:18 AM' },
-                { id: 'm4', sender: 'agent', text: 'I see the issue. Let me escalate this to our fulfillment team right away. You\'ll receive a corrected setup within 24 hours.', time: '8:20 AM' },
-                { id: 'm5', sender: 'customer', text: 'This is not what I ordered.', time: '8:22 AM' },
+            { id: 'c5', customer: 'Sophia B.', channel: 'WhatsApp', lastMsg: 'Это не то, что я заказала.', time: '2 ч назад', status: 'escalated', messages: [
+                { id: 'm1', sender: 'customer', text: 'Здравствуйте, получила посылку, но содержимое неверное.', time: '8:15' },
+                { id: 'm2', sender: 'agent', text: 'Приносим извинения, Sophia. Не могли бы вы сообщить номер заказа, чтобы я разобралась в ситуации?', time: '8:16' },
+                { id: 'm3', sender: 'customer', text: 'Заказ №X100-4829. Я заказывала настройку тарифа Pro, а пришёл Basic.', time: '8:18' },
+                { id: 'm4', sender: 'agent', text: 'Вижу проблему. Передаю заявку в отдел выполнения заказов прямо сейчас. Корректная настройка будет выполнена в течение 24 часов.', time: '8:20' },
+                { id: 'm5', sender: 'customer', text: 'Это не то, что я заказала.', time: '8:22' },
             ]},
-            { id: 'c7', customer: 'Tom H.', channel: 'Email', lastMsg: 'Please send the proposal by Friday.', time: '4h ago', status: 'active', messages: [
-                { id: 'm1', sender: 'customer', text: 'We discussed the custom integration package last week. Any updates?', time: '6:40 AM' },
-                { id: 'm2', sender: 'agent', text: 'Hi Tom! Yes, I\'ve prepared a tailored proposal including the API integration and dedicated support channel.', time: '6:45 AM' },
-                { id: 'm3', sender: 'customer', text: 'Great. What\'s the timeline for implementation?', time: '6:50 AM' },
-                { id: 'm4', sender: 'agent', text: 'Typically 2-3 weeks from contract signing. I\'ll include the full timeline in the proposal.', time: '6:52 AM' },
-                { id: 'm5', sender: 'customer', text: 'Please send the proposal by Friday.', time: '6:55 AM' },
+            { id: 'c7', customer: 'Tom H.', channel: 'Email', lastMsg: 'Пришлите коммерческое предложение до пятницы, пожалуйста.', time: '4 ч назад', status: 'active', messages: [
+                { id: 'm1', sender: 'customer', text: 'На прошлой неделе обсуждали пакет с индивидуальной интеграцией. Есть обновления?', time: '6:40' },
+                { id: 'm2', sender: 'agent', text: 'Здравствуйте, Tom! Да, я подготовил индивидуальное предложение, включающее API-интеграцию и выделенный канал поддержки.', time: '6:45' },
+                { id: 'm3', sender: 'customer', text: 'Отлично. Каковы сроки внедрения?', time: '6:50' },
+                { id: 'm4', sender: 'agent', text: 'Обычно 2–3 недели с момента подписания договора. Полный план включу в коммерческое предложение.', time: '6:52' },
+                { id: 'm5', sender: 'customer', text: 'Пришлите коммерческое предложение до пятницы, пожалуйста.', time: '6:55' },
             ]},
         ],
     },
     {
         id: 'agent-2',
         name: 'Sarah',
-        role: 'Support Specialist',
-        description: 'Resolves customer tickets, tracks orders, answers FAQ.',
+        role: 'Специалист поддержки',
+        description: 'Решает обращения клиентов, отслеживает заказы, отвечает на частые вопросы.',
         status: 'active',
         stats: { conversations: 890, leads: 420 },
         image: 'https://api.dicebear.com/9.x/notionists/svg?seed=Aneka',
         channels: [
-            { id: 'webchat', name: 'Website Widget', status: 'connected', messages: 3100, icon: '🌐' },
+            { id: 'webchat', name: 'Виджет сайта', status: 'connected', messages: 3100, icon: '🌐' },
             { id: 'email', name: 'Email (SMTP)', status: 'connected', messages: 640, icon: '📧' },
             { id: 'instagram', name: 'Instagram DM', status: 'pending', messages: 0, icon: '📸' },
         ],
         knowledge: [
-            { id: 'kb2', name: 'FAQ_Database.csv', size: '840 KB', type: 'CSV', synced: '1d ago', status: 'synced' },
-            { id: 'kb3', name: 'Company_Policies.docx', size: '1.1 MB', type: 'DOCX', synced: '3d ago', status: 'synced' },
-            { id: 'kb6', name: 'Return_Policy.pdf', size: '180 KB', type: 'PDF', synced: '5d ago', status: 'synced' },
+            { id: 'kb2', name: 'FAQ_Database.csv', size: '840 KB', type: 'CSV', synced: '1 д назад', status: 'synced' },
+            { id: 'kb3', name: 'Company_Policies.docx', size: '1.1 MB', type: 'DOCX', synced: '3 д назад', status: 'synced' },
+            { id: 'kb6', name: 'Return_Policy.pdf', size: '180 KB', type: 'PDF', synced: '5 д назад', status: 'synced' },
         ],
         recentConversations: [
-            { id: 'c2', customer: 'James R.', channel: 'Email', lastMsg: 'When will my refund be processed?', time: '12m ago', status: 'active', messages: [
-                { id: 'm1', sender: 'customer', text: 'I cancelled my subscription 5 days ago but haven\'t received a refund.', time: '9:50 AM' },
-                { id: 'm2', sender: 'agent', text: 'I\'m sorry for the delay, James. Let me check your account right away.', time: '9:51 AM' },
-                { id: 'm3', sender: 'agent', text: 'I can see the cancellation was processed. Refunds typically take 5-7 business days. Yours should arrive by Wednesday.', time: '9:53 AM' },
-                { id: 'm4', sender: 'customer', text: 'When will my refund be processed?', time: '9:55 AM' },
+            { id: 'c2', customer: 'James R.', channel: 'Email', lastMsg: 'Когда будет оформлен возврат средств?', time: '12 мин назад', status: 'active', messages: [
+                { id: 'm1', sender: 'customer', text: 'Я отменил подписку 5 дней назад, но возврат средств ещё не поступил.', time: '9:50' },
+                { id: 'm2', sender: 'agent', text: 'Приношу извинения за задержку, James. Сейчас проверю ваш аккаунт.', time: '9:51' },
+                { id: 'm3', sender: 'agent', text: 'Вижу, что отмена обработана. Возврат средств обычно занимает 5–7 рабочих дней. Ваш должен прийти к среде.', time: '9:53' },
+                { id: 'm4', sender: 'customer', text: 'Когда будет оформлен возврат средств?', time: '9:55' },
             ]},
-            { id: 'c6', customer: 'Max W.', channel: 'Instagram', lastMsg: 'Perfect, thanks for the quick help!', time: '3h ago', status: 'resolved', messages: [
-                { id: 'm1', sender: 'customer', text: 'How do I connect my Instagram DMs to the platform?', time: '7:10 AM' },
-                { id: 'm2', sender: 'agent', text: 'Go to Settings → Channels → Add Channel → Instagram. You\'ll need to authorize with your business account.', time: '7:11 AM' },
-                { id: 'm3', sender: 'customer', text: 'Perfect, thanks for the quick help!', time: '7:13 AM' },
+            { id: 'c6', customer: 'Max W.', channel: 'Instagram', lastMsg: 'Отлично, спасибо за быструю помощь!', time: '3 ч назад', status: 'resolved', messages: [
+                { id: 'm1', sender: 'customer', text: 'Как подключить директ Instagram к платформе?', time: '7:10' },
+                { id: 'm2', sender: 'agent', text: 'Перейдите в Настройки → Каналы → Добавить канал → Instagram. Потребуется авторизация через бизнес-аккаунт.', time: '7:11' },
+                { id: 'm3', sender: 'customer', text: 'Отлично, спасибо за быструю помощь!', time: '7:13' },
             ]},
-            { id: 'c8', customer: 'Anna P.', channel: 'Website', lastMsg: 'How do I update my billing info?', time: '6h ago', status: 'resolved', messages: [
-                { id: 'm1', sender: 'customer', text: 'I need to change the credit card on file.', time: '4:20 AM' },
-                { id: 'm2', sender: 'agent', text: 'Sure! Navigate to Account → Billing → Payment Methods. You can add a new card and remove the old one there.', time: '4:21 AM' },
-                { id: 'm3', sender: 'customer', text: 'How do I update my billing info?', time: '4:23 AM' },
-                { id: 'm4', sender: 'agent', text: 'Just follow the steps I mentioned: Account → Billing → Payment Methods. Would you like me to send you a direct link?', time: '4:24 AM' },
-                { id: 'm5', sender: 'customer', text: 'Got it, found it. Thanks!', time: '4:26 AM' },
+            { id: 'c8', customer: 'Anna P.', channel: 'Сайт', lastMsg: 'Как обновить платёжные данные?', time: '6 ч назад', status: 'resolved', messages: [
+                { id: 'm1', sender: 'customer', text: 'Мне нужно сменить привязанную карту.', time: '4:20' },
+                { id: 'm2', sender: 'agent', text: 'Конечно! Перейдите в Аккаунт → Оплата → Способы оплаты. Там можно добавить новую карту и удалить старую.', time: '4:21' },
+                { id: 'm3', sender: 'customer', text: 'Как обновить платёжные данные?', time: '4:23' },
+                { id: 'm4', sender: 'agent', text: 'Следуйте шагам, которые я описала: Аккаунт → Оплата → Способы оплаты. Хотите, отправлю прямую ссылку?', time: '4:24' },
+                { id: 'm5', sender: 'customer', text: 'Нашла, спасибо большое!', time: '4:26' },
             ]},
         ],
     },
     {
         id: 'agent-3',
         name: 'Maya',
-        role: 'Receptionist',
-        description: 'Manages appointment bookings, sends reminders.',
+        role: 'Администратор',
+        description: 'Управляет записью на приём, отправляет напоминания.',
         status: 'paused',
         stats: { conversations: 340, leads: 180 },
         image: 'https://api.dicebear.com/9.x/notionists/svg?seed=Bella',
@@ -227,16 +227,16 @@ const INITIAL_AGENTS: Agent[] = [
             { id: 'sms', name: 'SMS / Twilio', status: 'disconnected', messages: 0, icon: '📱' },
         ],
         knowledge: [
-            { id: 'kb7', name: 'Services_Catalog.pdf', size: '1.8 MB', type: 'PDF', synced: '2d ago', status: 'synced' },
-            { id: 'kb8', name: 'Booking_Rules.docx', size: '220 KB', type: 'DOCX', synced: '4d ago', status: 'synced' },
+            { id: 'kb7', name: 'Services_Catalog.pdf', size: '1.8 MB', type: 'PDF', synced: '2 д назад', status: 'synced' },
+            { id: 'kb8', name: 'Booking_Rules.docx', size: '220 KB', type: 'DOCX', synced: '4 д назад', status: 'synced' },
         ],
         recentConversations: [
-            { id: 'c4', customer: 'David L.', channel: 'WhatsApp', lastMsg: 'I need to reschedule my appointment.', time: '1h ago', status: 'resolved', messages: [
-                { id: 'm1', sender: 'customer', text: 'Hi, I have an appointment tomorrow at 3 PM but I can\'t make it.', time: '9:00 AM' },
-                { id: 'm2', sender: 'agent', text: 'No problem, David! I can help reschedule. What time works better for you?', time: '9:01 AM' },
-                { id: 'm3', sender: 'customer', text: 'How about Thursday at 11 AM?', time: '9:03 AM' },
-                { id: 'm4', sender: 'agent', text: 'Thursday at 11 AM is available. I\'ve updated your appointment. You\'ll get a confirmation shortly.', time: '9:04 AM' },
-                { id: 'm5', sender: 'customer', text: 'I need to reschedule my appointment.', time: '9:05 AM' },
+            { id: 'c4', customer: 'David L.', channel: 'WhatsApp', lastMsg: 'Мне нужно перенести запись.', time: '1 ч назад', status: 'resolved', messages: [
+                { id: 'm1', sender: 'customer', text: 'Здравствуйте, у меня запись завтра в 15:00, но я не смогу прийти.', time: '9:00' },
+                { id: 'm2', sender: 'agent', text: 'Без проблем, David! Помогу перенести. Какое время вам удобно?', time: '9:01' },
+                { id: 'm3', sender: 'customer', text: 'В четверг в 11:00 подойдёт?', time: '9:03' },
+                { id: 'm4', sender: 'agent', text: 'Четверг в 11:00 свободен. Запись перенесена. Подтверждение придёт в ближайшее время.', time: '9:04' },
+                { id: 'm5', sender: 'customer', text: 'Мне нужно перенести запись.', time: '9:05' },
             ]},
         ],
     }
@@ -311,8 +311,8 @@ const ProgressBar = ({ label, percentage, color = "bg-[#00C2FF]", modelPercentag
             )}
         </div>
         <div className="flex justify-between text-[10px] mt-1 font-mono">
-             <span className={darkMode ? 'text-white' : 'text-gray-900'}>Current ({percentage}%)</span>
-             {modelPercentage && <span className="text-gray-500">Target ({modelPercentage}%)</span>}
+             <span className={darkMode ? 'text-white' : 'text-gray-900'}>Текущий ({percentage}%)</span>
+             {modelPercentage && <span className="text-gray-500">Целевой ({modelPercentage}%)</span>}
         </div>
     </div>
 )
@@ -336,8 +336,8 @@ const AgentTemplatesModal = ({ onClose, onSelect, darkMode }: { onClose: () => v
                 <div className={`p-8 border-b ${darkMode ? 'border-white/10' : 'border-gray-100'}`}>
                     <div className="flex justify-between items-start">
                         <div>
-                            <h2 className={`text-2xl font-serif mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Deploy New Agent</h2>
-                            <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>Choose a template to configure your new digital employee.</p>
+                            <h2 className={`text-2xl font-serif mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Создать нового агента</h2>
+                            <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>Выберите шаблон для настройки нового цифрового сотрудника.</p>
                         </div>
                         <button onClick={onClose} className={`p-2 rounded-full transition-colors ${darkMode ? 'hover:bg-white/10 text-gray-400 hover:text-white' : 'hover:bg-gray-100 text-gray-500 hover:text-black'}`}>
                             <XIcon />
@@ -381,7 +381,7 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
     const [description, setDescription] = useState(agent.description || '');
     const [currentImage, setCurrentImage] = useState(agent.image);
     const [knowledgeBase, setKnowledgeBase] = useState([
-        { id: 'kb1', name: 'Company_Pricing.pdf', size: '1.2 MB', type: 'PDF', status: 'Synced' }
+        { id: 'kb1', name: 'Company_Pricing.pdf', size: '1.2 MB', type: 'PDF', status: 'Синхронизирован' }
     ]);
     
     // Update state if agent prop changes
@@ -459,13 +459,13 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
                 name: file.name,
                 size: (file.size / 1024 / 1024).toFixed(2) + ' MB',
                 type: file.name.split('.').pop()?.toUpperCase() || 'FILE',
-                status: 'Uploading...'
+                status: 'Загрузка...'
             }]);
             
             // Simulate sync finish
             setTimeout(() => {
                 setKnowledgeBase(prev => prev.map(item => 
-                    item.name === file.name ? { ...item, status: 'Synced' } : item
+                    item.name === file.name ? { ...item, status: 'Синхронизирован' } : item
                 ));
             }, 1500);
         }
@@ -498,7 +498,7 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
         >
             {/* Header */}
             <div className={`flex items-center justify-between px-6 py-5 border-b ${darkMode ? 'border-white/10 bg-white/5' : 'border-gray-200 bg-gray-50'}`}>
-                <h3 className={`text-xl font-heading font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>{agent.id.startsWith('new') ? 'Deploy Agent' : 'Edit Agent'}</h3>
+                <h3 className={`text-xl font-heading font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>{agent.id.startsWith('new') ? 'Создать агента' : 'Редактировать агента'}</h3>
                 <button onClick={onClose} className={`p-2 rounded-full transition-colors ${darkMode ? 'hover:bg-white/10 text-gray-400 hover:text-white' : 'hover:bg-gray-100 text-gray-500 hover:text-black'}`}>
                     <XIcon />
                 </button>
@@ -515,7 +515,7 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
                     >
                         <img src={currentImage} alt={name} className="w-full h-full object-cover group-hover:opacity-50 transition-opacity bg-black" />
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
-                            <span className="text-xs font-bold text-white uppercase tracking-widest">Change</span>
+                            <span className="text-xs font-bold text-white uppercase tracking-widest">Изменить</span>
                         </div>
                     </div>
                     
@@ -544,7 +544,7 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
                                     className={`w-12 h-12 rounded-full border-2 border-dashed flex items-center justify-center transition-all hover:border-blue-500 hover:text-blue-500
                                     ${darkMode ? 'border-white/20 text-white/50' : 'border-gray-300 text-gray-400'}
                                     `}
-                                    title="Upload Custom"
+                                    title="Загрузить своё"
                                 >
                                     <PlusIcon />
                                 </button>
@@ -571,10 +571,10 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
                 <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                     {/* Basic Info */}
                     <div className="space-y-4">
-                        <h4 className="text-xs text-gray-500 font-mono uppercase tracking-widest border-b border-gray-200 dark:border-white/5 pb-2">Identity</h4>
+                        <h4 className="text-xs text-gray-500 font-mono uppercase tracking-widest border-b border-gray-200 dark:border-white/5 pb-2">Личность</h4>
                         <div className="space-y-3">
                             <div>
-                                <label className="text-xs text-gray-400 mb-1.5 block">Display Name</label>
+                                <label className="text-xs text-gray-400 mb-1.5 block">Отображаемое имя</label>
                                 <input 
                                     type="text" 
                                     value={name} 
@@ -583,7 +583,7 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
                                 />
                             </div>
                              <div>
-                                <label className="text-xs text-gray-400 mb-1.5 block">Role / Function</label>
+                                <label className="text-xs text-gray-400 mb-1.5 block">Роль / Функция</label>
                                 <input 
                                     type="text" 
                                     value={role}
@@ -596,22 +596,22 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
 
                     {/* Description & Process */}
                     <div className="space-y-4">
-                        <h4 className="text-xs text-gray-500 font-mono uppercase tracking-widest border-b border-gray-200 dark:border-white/5 pb-2">Behavior & Logic</h4>
+                        <h4 className="text-xs text-gray-500 font-mono uppercase tracking-widest border-b border-gray-200 dark:border-white/5 pb-2">Поведение и логика</h4>
                         <div className="space-y-3">
                              <div>
-                                <label className="text-xs text-gray-400 mb-1.5 block">Agent Description</label>
-                                <textarea 
+                                <label className="text-xs text-gray-400 mb-1.5 block">Описание агента</label>
+                                <textarea
                                     className={`w-full rounded-lg px-4 py-3 outline-none transition-colors text-sm min-h-[80px] resize-none border focus:border-[#00C2FF] ${darkMode ? 'bg-[#0A0A0A] border-white/10 text-white' : 'bg-gray-50 border-gray-200 text-gray-900'}`}
                                     value={description}
                                     onChange={(e) => setDescription(e.target.value)}
-                                    placeholder={agent.id.startsWith('new') ? "This agent is configured to handle..." : ""}
+                                    placeholder={agent.id.startsWith('new') ? "Этот агент настроен для обработки..." : ""}
                                 />
                             </div>
                              <div>
-                                <label className="text-xs text-gray-400 mb-1.5 block">Workflow Process</label>
-                                <textarea 
+                                <label className="text-xs text-gray-400 mb-1.5 block">Рабочий процесс</label>
+                                <textarea
                                     className={`w-full rounded-lg px-4 py-3 outline-none transition-colors text-sm min-h-[120px] font-mono text-xs leading-relaxed resize-none border focus:border-[#00C2FF] ${darkMode ? 'bg-[#0A0A0A] border-white/10 text-white' : 'bg-gray-50 border-gray-200 text-gray-900'}`}
-                                    defaultValue={`1. Analyze incoming message sentiment.\n2. Check Knowledge Base for pricing/availability.\n3. If intent is "booking", query Google Calendar.\n4. Propose slots or answer questions.\n5. Log conversation to CRM.`}
+                                    defaultValue={`1. Анализировать тональность входящего сообщения.\n2. Проверить базу знаний на наличие цен/доступности.\n3. Если намерение — «запись», запросить Google Calendar.\n4. Предложить слоты или ответить на вопросы.\n5. Занести разговор в CRM.`}
                                 />
                             </div>
                         </div>
@@ -619,7 +619,7 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
 
                     {/* Integrations */}
                     <div className="space-y-4">
-                        <h4 className="text-xs text-gray-500 font-mono uppercase tracking-widest border-b border-gray-200 dark:border-white/5 pb-2">Integrations</h4>
+                        <h4 className="text-xs text-gray-500 font-mono uppercase tracking-widest border-b border-gray-200 dark:border-white/5 pb-2">Интеграции</h4>
                         <div className="space-y-2">
                             {integrations.map((item) => (
                                 <div key={item.id} className={`flex items-center justify-between p-3 rounded-xl border transition-colors ${darkMode ? 'bg-[#0A0A0A] border-white/5 hover:border-white/10' : 'bg-gray-50 border-gray-200 hover:border-gray-300'}`}>
@@ -635,13 +635,13 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
                             onClick={() => setShowToolModal(true)}
                             className={`w-full py-3 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 shadow-lg ${darkMode ? 'bg-green-600 hover:bg-green-700 text-white shadow-green-900/20' : 'bg-green-600 hover:bg-green-700 text-white shadow-green-200'}`}
                         >
-                             Connect New Tool +
+                             Подключить инструмент +
                         </button>
                     </div>
                     
                     {/* Knowledge Base */}
                     <div className="space-y-4">
-                        <h4 className="text-xs text-gray-500 font-mono uppercase tracking-widest border-b border-gray-200 dark:border-white/5 pb-2">Knowledge Base</h4>
+                        <h4 className="text-xs text-gray-500 font-mono uppercase tracking-widest border-b border-gray-200 dark:border-white/5 pb-2">База знаний</h4>
                         <div className="space-y-2">
                             {knowledgeBase.map((file) => (
                                 <div key={file.id} className={`border rounded-lg p-3 flex items-center justify-between group ${darkMode ? 'bg-[#0A0A0A] border-white/10' : 'bg-gray-50 border-gray-200'}`}>
@@ -669,7 +669,7 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
                                 onClick={() => knowledgeInputRef.current?.click()}
                                 className={`w-full py-3 border border-dashed rounded-lg text-sm transition-colors flex items-center justify-center gap-2 ${darkMode ? 'border-white/20 text-gray-400 hover:text-white hover:border-white/40' : 'border-gray-300 text-gray-500 hover:text-black hover:border-gray-400'}`}
                             >
-                                <PlusIcon /> Add Source
+                                <PlusIcon /> Добавить источник
                             </button>
                             <input 
                                 type="file" 
@@ -705,7 +705,7 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
                                 <input 
                                     type="text" 
                                     autoFocus
-                                    placeholder="Search integrations..." 
+                                    placeholder="Поиск интеграций..."
                                     value={toolSearch}
                                     onChange={(e) => setToolSearch(e.target.value)}
                                     className={`flex-1 bg-transparent outline-none text-sm ${darkMode ? 'text-white placeholder:text-gray-600' : 'text-gray-900 placeholder:text-gray-400'}`}
@@ -726,13 +726,13 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
                                         >
                                             <span className="text-sm font-medium">{tool.name}</span>
                                             <span className={`ml-auto opacity-0 group-hover:opacity-100 transition-opacity text-xs font-bold ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
-                                                ADD
+                                                ДОБАВИТЬ
                                             </span>
                                         </button>
                                     ))
                                 ) : (
                                     <div className="p-8 text-center text-gray-500 text-xs">
-                                        No tools found.
+                                        Инструменты не найдены.
                                     </div>
                                 )}
                             </div>
@@ -747,11 +747,11 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
                     onClick={handleSave}
                     className={`w-full py-3.5 rounded-xl font-mono text-sm font-bold uppercase tracking-wide transition-colors shadow-lg ${darkMode ? 'bg-white text-black hover:bg-gray-200' : 'bg-black text-white hover:bg-gray-800'}`}
                 >
-                    {agent.id.startsWith('new') ? 'Deploy Agent' : 'Save Changes'}
+                    {agent.id.startsWith('new') ? 'Создать агента' : 'Сохранить'}
                 </button>
                 {!agent.id.startsWith('new') && (
                     <button className="w-full bg-red-500/5 text-red-400 py-3.5 rounded-xl font-mono text-sm font-bold uppercase tracking-wide hover:bg-red-500/10 transition-colors border border-red-500/20">
-                        Pause Agent
+                        Приостановить агента
                     </button>
                 )}
             </div>
@@ -765,7 +765,7 @@ const AgentEditorPanel = ({ agent, onClose, onSave, darkMode }: { agent: Agent |
 const TestBotPanel = ({ darkMode }: { darkMode: boolean }) => {
     const dm = darkMode;
     const [msgs, setMsgs] = useState<Message[]>([
-        { id: 1, text: "Hi! I'm interested in your product. Can you tell me more?", sender: 'user', timestamp: new Date() },
+        { id: 1, text: "Добрый день! Меня интересует ваш продукт. Расскажите подробнее?", sender: 'user', timestamp: new Date() },
     ]);
     const [inp, setInp] = useState('');
     const [sending, setSending] = useState(false);
@@ -798,7 +798,7 @@ const TestBotPanel = ({ darkMode }: { darkMode: boolean }) => {
             const data = await res.json();
             setMsgs(prev => [...prev, { id: Date.now() + 1, text: data.content, sender: 'ai', timestamp: new Date() }]);
         } catch {
-            setMsgs(prev => [...prev, { id: Date.now() + 1, text: 'Connection error. Check backend.', sender: 'ai', timestamp: new Date() }]);
+            setMsgs(prev => [...prev, { id: Date.now() + 1, text: 'Ошибка соединения. Проверьте бэкенд.', sender: 'ai', timestamp: new Date() }]);
         } finally {
             setSending(false);
             setTyping(false);
@@ -823,8 +823,8 @@ const TestBotPanel = ({ darkMode }: { darkMode: boolean }) => {
                     <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-[#0a0c14]" />
                 </div>
                 <div className="flex-1 min-w-0">
-                    <p className={`text-xs font-semibold truncate ${dm ? 'text-white/90' : 'text-gray-900'}`}>Test Customer Chat</p>
-                    <p className={`text-[10px] ${dm ? 'text-emerald-400/80' : 'text-emerald-600'}`}>Agent online</p>
+                    <p className={`text-xs font-semibold truncate ${dm ? 'text-white/90' : 'text-gray-900'}`}>Тестовый чат клиента</p>
+                    <p className={`text-[10px] ${dm ? 'text-emerald-400/80' : 'text-emerald-600'}`}>Агент онлайн</p>
                 </div>
                 <div className={`px-2 py-0.5 rounded-full text-[9px] font-mono uppercase tracking-wider ${dm ? 'bg-amber-500/10 text-amber-400 border border-amber-500/20' : 'bg-amber-50 text-amber-600 border border-amber-200'}`}>
                     Test
@@ -865,7 +865,7 @@ const TestBotPanel = ({ darkMode }: { darkMode: boolean }) => {
                         value={inp}
                         onChange={e => setInp(e.target.value)}
                         onKeyDown={e => e.key === 'Enter' && !e.shiftKey && (e.preventDefault(), send())}
-                        placeholder="Type as customer..."
+                        placeholder="Напишите как клиент..."
                         disabled={sending}
                         className={`flex-1 bg-transparent border-0 focus:ring-0 resize-none py-2 px-2 text-[13px] min-h-[36px] max-h-20 scrollbar-hide ${dm ? 'text-white placeholder-white/25' : 'text-gray-900 placeholder-gray-400'} disabled:opacity-50`}
                         rows={1}
@@ -928,7 +928,7 @@ const ChecklistWidget = ({ items, locked, darkMode, onConfirm }: {
                     onClick={() => onConfirm(localChecks)}
                     className="mt-2 px-4 py-2 rounded-xl text-xs font-semibold transition-all bg-[#00C2FF] text-black hover:bg-[#00A8E0]"
                 >
-                    Confirm selection
+                    Подтвердить выбор
                 </button>
             )}
         </div>
@@ -984,46 +984,46 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
     // Widgets for each step — frontend adds these to the agent's real response
     const STEP_WIDGETS: Record<number, Partial<Message>> = {
         0: { buttons: [
-            { label: 'Sales Agent', value: 'Sales Agent', icon: '💼' },
-            { label: 'Support Agent', value: 'Support Agent', icon: '🎧' },
-            { label: 'Receptionist', value: 'Receptionist', icon: '📞' },
-            { label: 'Recruiter', value: 'Recruiter', icon: '👤' },
-            { label: 'Marketing Agent', value: 'Marketing Agent', icon: '📊' },
-            { label: 'Custom', value: 'Custom Agent', icon: '⚙️' },
+            { label: 'Агент продаж', value: 'Sales Agent', icon: '💼' },
+            { label: 'Агент поддержки', value: 'Support Agent', icon: '🎧' },
+            { label: 'Администратор', value: 'Receptionist', icon: '📞' },
+            { label: 'Рекрутер', value: 'Recruiter', icon: '👤' },
+            { label: 'Маркетинговый агент', value: 'Marketing Agent', icon: '📊' },
+            { label: 'Свой тип', value: 'Custom Agent', icon: '⚙️' },
         ]},
         1: { buttons: [
-            { label: 'Answer client questions', value: 'Answer incoming client questions and provide information' },
-            { label: 'Generate leads', value: 'Qualify and generate leads from incoming requests' },
-            { label: 'Process orders', value: 'Process and track customer orders' },
-            { label: 'Book appointments', value: 'Schedule calls and appointments with clients' },
-            { label: 'Technical support', value: 'Resolve technical issues and support tickets' },
+            { label: 'Отвечать на вопросы клиентов', value: 'Answer incoming client questions and provide information' },
+            { label: 'Генерировать лиды', value: 'Qualify and generate leads from incoming requests' },
+            { label: 'Обрабатывать заказы', value: 'Process and track customer orders' },
+            { label: 'Записывать на встречи', value: 'Schedule calls and appointments with clients' },
+            { label: 'Техническая поддержка', value: 'Resolve technical issues and support tickets' },
         ]},
         3: { checklist: [
-            { id: 'goal_leads', label: 'Lead generation', checked: false },
-            { id: 'goal_sales', label: 'Close sales', checked: false },
-            { id: 'goal_consult', label: 'Consultations', checked: false },
-            { id: 'goal_call', label: 'Book a call / demo', checked: false },
-            { id: 'goal_qualify', label: 'Qualify prospects', checked: false },
-            { id: 'goal_support', label: 'Customer support', checked: false },
-            { id: 'goal_upsell', label: 'Upsell / Cross-sell', checked: false },
-            { id: 'goal_followup', label: 'Follow-ups & reminders', checked: false },
+            { id: 'goal_leads', label: 'Генерация лидов', checked: false },
+            { id: 'goal_sales', label: 'Закрытие сделок', checked: false },
+            { id: 'goal_consult', label: 'Консультации', checked: false },
+            { id: 'goal_call', label: 'Запись на звонок / демо', checked: false },
+            { id: 'goal_qualify', label: 'Квалификация лидов', checked: false },
+            { id: 'goal_support', label: 'Поддержка клиентов', checked: false },
+            { id: 'goal_upsell', label: 'Допродажи / Кросс-продажи', checked: false },
+            { id: 'goal_followup', label: 'Повторные касания и напоминания', checked: false },
         ]},
         4: { checklist: [
-            { id: 'tone_friendly', label: 'Friendly & casual', checked: false },
-            { id: 'tone_formal', label: 'Professional & formal', checked: false },
-            { id: 'tone_concise', label: 'Concise & to the point', checked: false },
-            { id: 'tone_emoji', label: 'Uses emojis', checked: false },
-            { id: 'tone_proactive', label: 'Proactive (asks follow-up questions)', checked: true },
-            { id: 'tone_escalate', label: 'Knows when to escalate to human', checked: true },
+            { id: 'tone_friendly', label: 'Дружелюбный и неформальный', checked: false },
+            { id: 'tone_formal', label: 'Профессиональный и деловой', checked: false },
+            { id: 'tone_concise', label: 'Лаконичный, по существу', checked: false },
+            { id: 'tone_emoji', label: 'Использует эмодзи', checked: false },
+            { id: 'tone_proactive', label: 'Проактивный (задаёт уточняющие вопросы)', checked: true },
+            { id: 'tone_escalate', label: 'Знает, когда передать оператору', checked: true },
         ]},
         5: { fileUpload: true },
         6: { checklist: [
             { id: 'ch_whatsapp', label: 'WhatsApp', checked: false },
             { id: 'ch_telegram', label: 'Telegram', checked: false },
-            { id: 'ch_instagram', label: 'Instagram DMs', checked: false },
+            { id: 'ch_instagram', label: 'Instagram Директ', checked: false },
             { id: 'ch_email', label: 'Email', checked: false },
-            { id: 'ch_website', label: 'Website chat widget', checked: true },
-            { id: 'ch_phone', label: 'Phone / Voice', checked: false },
+            { id: 'ch_website', label: 'Виджет чата на сайте', checked: true },
+            { id: 'ch_phone', label: 'Телефон / Голос', checked: false },
         ]},
     };
 
@@ -1060,21 +1060,21 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
                 // Summary step
                 addAiMsg(agentText, {
                     summary: {
-                        'Agent type': d.role || '—',
-                        'Main task': d.task || '—',
-                        'Business': d.business || '—',
-                        'Goals': d.goals || '—',
-                        'Communication style': d.tone || '—',
-                        'Documents': uploadedFiles.length > 0 ? uploadedFiles.join(', ') : 'None uploaded',
-                        'Channels': d.channels || '—',
+                        'Тип агента': d.role || '—',
+                        'Основная задача': d.task || '—',
+                        'Бизнес': d.business || '—',
+                        'Цели': d.goals || '—',
+                        'Стиль общения': d.tone || '—',
+                        'Документы': uploadedFiles.length > 0 ? uploadedFiles.join(', ') : 'Не загружены',
+                        'Каналы': d.channels || '—',
                     }
                 });
                 setTimeout(() => {
                     addAiMsg("", {
                         buttons: [
-                            { label: 'Deploy Agent', value: '__deploy__' },
-                            { label: 'Edit settings', value: '__edit__' },
-                            { label: 'Start over', value: '__restart__' },
+                            { label: 'Запустить агента', value: '__deploy__' },
+                            { label: 'Изменить настройки', value: '__edit__' },
+                            { label: 'Начать заново', value: '__restart__' },
                         ]
                     });
                 }, 400);
@@ -1085,31 +1085,31 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
             setIsTyping(false);
             // Fallback if backend is down
             const fallbacks: Record<number, string> = {
-                0: "Welcome! Let's create your AI agent. What role should they perform?",
-                1: `${d.role} — great choice! What is the main task for this agent?`,
-                2: "Now tell me about your business: industry, product/service, target audience.",
-                3: "Select the goals for your agent:",
-                4: "What communication style should the agent use?",
-                5: "Upload company documents so the agent knows your business (FAQ, catalogs, scripts).",
-                6: "Which channels should this agent work on?",
-                7: "Your agent is configured! Here's the summary:",
+                0: "Добро пожаловать! Давайте создадим вашего ИИ-агента. Какую роль он должен выполнять?",
+                1: `${d.role} — отличный выбор! Какова основная задача этого агента?`,
+                2: "Расскажите о вашем бизнесе: отрасль, продукт/услуга, целевая аудитория.",
+                3: "Выберите цели для вашего агента:",
+                4: "Какой стиль общения должен использовать агент?",
+                5: "Загрузите документы компании, чтобы агент знал ваш бизнес (FAQ, каталоги, скрипты).",
+                6: "В каких каналах должен работать этот агент?",
+                7: "Агент настроен! Вот сводка:",
             };
             if (step === 7) {
                 addAiMsg(fallbacks[7] || '', {
                     summary: {
-                        'Agent type': d.role || '—', 'Main task': d.task || '—', 'Business': d.business || '—',
-                        'Goals': d.goals || '—', 'Communication style': d.tone || '—',
-                        'Documents': uploadedFiles.length > 0 ? uploadedFiles.join(', ') : 'None',
-                        'Channels': d.channels || '—',
+                        'Тип агента': d.role || '—', 'Основная задача': d.task || '—', 'Бизнес': d.business || '—',
+                        'Цели': d.goals || '—', 'Стиль общения': d.tone || '—',
+                        'Документы': uploadedFiles.length > 0 ? uploadedFiles.join(', ') : 'Не загружены',
+                        'Каналы': d.channels || '—',
                     }
                 });
                 setTimeout(() => addAiMsg("", { buttons: [
-                    { label: 'Deploy Agent', value: '__deploy__' },
-                    { label: 'Edit settings', value: '__edit__' },
-                    { label: 'Start over', value: '__restart__' },
+                    { label: 'Запустить агента', value: '__deploy__' },
+                    { label: 'Изменить настройки', value: '__edit__' },
+                    { label: 'Начать заново', value: '__restart__' },
                 ]}), 400);
             } else {
-                addAiMsg(fallbacks[step] || "Let's continue.", STEP_WIDGETS[step] || {});
+                addAiMsg(fallbacks[step] || "Продолжаем.", STEP_WIDGETS[step] || {});
             }
         }
     };
@@ -1125,7 +1125,7 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
                     addAiMsg(text, STEP_WIDGETS[0]);
                 } catch {
                     setIsTyping(false);
-                    addAiMsg("Welcome! I'm the X100 Architect. Let's create your AI agent step by step.\n\nFirst — what kind of agent do you need?", STEP_WIDGETS[0]);
+                    addAiMsg("Добро пожаловать! Я X100 Architect. Давайте создадим вашего ИИ-агента шаг за шагом.\n\nИтак — какой тип агента вам нужен?", STEP_WIDGETS[0]);
                 }
             })();
         }
@@ -1135,16 +1135,16 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
     // --- Button click handler ---
     const handleButtonClick = (value: string) => {
         if (value === '__deploy__') {
-            addUserMsg('Deploy Agent');
+            addUserMsg('Запустить агента');
             setIsTyping(true);
             (async () => {
                 try {
-                    const text = await askAgent(`[SYSTEM: The user clicked "Deploy Agent". Confirm the agent has been deployed successfully. Suggest testing it. Be enthusiastic and brief.]`);
+                    const text = await askAgent(`[SYSTEM: The user clicked "Deploy Agent". Confirm the agent has been deployed successfully. Suggest testing it. Be enthusiastic and brief. Reply in Russian.]`);
                     setIsTyping(false);
                     addAiMsg(text);
                 } catch {
                     setIsTyping(false);
-                    addAiMsg("Agent deployed successfully! You can now test it using the Test Agent panel on the right. →");
+                    addAiMsg("Агент успешно запущен! Вы можете протестировать его в панели «Тест агента» справа. →");
                 }
                 setShowTestBot(true);
             })();
@@ -1158,16 +1158,16 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
             return;
         }
         if (value === '__edit__') {
-            addUserMsg('Edit settings');
+            addUserMsg('Изменить настройки');
             (async () => {
                 setIsTyping(true);
                 try {
-                    const text = await askAgent(`[SYSTEM: The user wants to edit the agent settings. Ask what they'd like to change. Current config: ${JSON.stringify(wizardData)}]`);
+                    const text = await askAgent(`[SYSTEM: The user wants to edit the agent settings. Ask what they'd like to change. Current config: ${JSON.stringify(wizardData)}. Reply in Russian.]`);
                     setIsTyping(false);
                     addAiMsg(text);
                 } catch {
                     setIsTyping(false);
-                    addAiMsg("Sure! Just type what you'd like to change and I'll update the configuration.");
+                    addAiMsg("Конечно! Напишите, что хотите изменить, и я обновлю конфигурацию.");
                 }
             })();
             return;
@@ -1206,7 +1206,7 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
     };
 
     const handleFilesConfirm = () => {
-        addUserMsg(uploadedFiles.length > 0 ? `Uploaded: ${uploadedFiles.join(', ')}` : 'Skip documents');
+        addUserMsg(uploadedFiles.length > 0 ? `Загружено: ${uploadedFiles.join(', ')}` : 'Пропустить документы');
         advanceWizard(6, {});
     };
 
@@ -1304,7 +1304,7 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
             const data = await res.json();
             addAiMsg(data.content);
         } catch {
-            addAiMsg("I'll note that. Anything else you'd like to adjust?");
+            addAiMsg("Принято. Что-то ещё хотите изменить?");
         } finally {
             setIsSending(false);
             setIsTyping(false);
@@ -1382,13 +1382,13 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
                                                         onClick={() => fileInputRef.current?.click()}
                                                         className={`px-3 py-2 rounded-xl text-xs font-medium transition-all border ${darkMode ? 'border-white/10 text-white/70 hover:bg-white/5' : 'border-gray-200 text-gray-600 hover:bg-gray-50'}`}
                                                     >
-                                                        + Add files
+                                                        + Добавить файлы
                                                     </button>
                                                     <button
                                                         onClick={handleFilesConfirm}
                                                         className="px-4 py-2 rounded-xl text-xs font-semibold bg-[#00C2FF] text-black hover:bg-[#00A8E0] transition-all"
                                                     >
-                                                        {uploadedFiles.length > 0 ? 'Continue' : 'Skip for now'}
+                                                        {uploadedFiles.length > 0 ? 'Продолжить' : 'Пропустить'}
                                                     </button>
                                                 </div>
                                             )}
@@ -1434,7 +1434,7 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             onKeyDown={(e) => e.key === 'Enter' && !e.shiftKey && (e.preventDefault(), handleSend())}
-                            placeholder={isRecording ? "Recording... click send when done" : isTranscribing ? "Transcribing..." : isSending ? "Sending..." : "Describe the agent you want to create..."}
+                            placeholder={isRecording ? "Запись... нажмите отправить когда закончите" : isTranscribing ? "Распознавание..." : isSending ? "Отправка..." : "Опишите агента, которого хотите создать..."}
                             disabled={isSending || isTranscribing}
                             className={`flex-grow bg-transparent border-0 placeholder:text-gray-500 focus:ring-0 resize-none py-3 px-3 max-h-32 min-h-[48px] scrollbar-hide text-sm ${darkMode ? 'text-white' : 'text-gray-900'} disabled:opacity-50`}
                             rows={1}
@@ -1447,7 +1447,7 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
                                     ? 'text-red-400 bg-red-500/10 animate-pulse'
                                     : darkMode ? 'text-gray-400 hover:text-white hover:bg-white/5' : 'text-gray-500 hover:text-black hover:bg-gray-100'
                             } disabled:opacity-50`}
-                            title={isRecording ? 'Stop recording' : 'Voice input (Whisper)'}
+                            title={isRecording ? 'Остановить запись' : 'Голосовой ввод (Whisper)'}
                         >
                             <MicIcon />
                             {isRecording && <span className="absolute top-1 right-1 w-2 h-2 rounded-full bg-red-500 animate-pulse" />}
@@ -1465,7 +1465,7 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
                         </button>
                      </div>
                      <p className="text-center text-[10px] text-gray-600 mt-3 font-mono">
-                        AI Architect can make mistakes. Review generated configurations.
+                        AI Architect может ошибаться. Проверяйте сгенерированные конфигурации.
                      </p>
                  </div>
             </div>
@@ -1482,7 +1482,7 @@ const ChatView = ({ darkMode }: { darkMode: boolean }) => {
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                 </svg>
-                Test Agent
+                Тест агента
             </button>
 
             {/* Test Bot Panel (right side) */}
@@ -1505,7 +1505,7 @@ const WorkforceView = ({ agents, onEditAgent, onDeployAgent, darkMode }: { agent
     const dm = darkMode;
     return (
         <div className="p-8 max-w-6xl mx-auto w-full">
-            <h2 className={`text-3xl font-serif mb-8 ${dm ? 'text-white' : 'text-gray-900'}`}>My Workforce</h2>
+            <h2 className={`text-3xl font-serif mb-8 ${dm ? 'text-white' : 'text-gray-900'}`}>Мои сотрудники</h2>
 
             {/* Stats Overview */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -1514,12 +1514,12 @@ const WorkforceView = ({ agents, onEditAgent, onDeployAgent, darkMode }: { agent
                         <div className={`w-7 h-7 rounded-lg flex items-center justify-center ${dm ? 'icon-bg-emerald' : 'bg-green-50'}`}>
                             <UsersIcon className="w-3.5 h-3.5 icon-emerald" />
                         </div>
-                        <p className={`text-xs font-mono uppercase tracking-widest ${dm ? 'text-white/40' : 'text-gray-500'}`}>Active Agents</p>
+                        <p className={`text-xs font-mono uppercase tracking-widest ${dm ? 'text-white/40' : 'text-gray-500'}`}>Активные агенты</p>
                     </div>
                     <div className="flex items-end gap-3">
                         <p className={`text-3xl font-medium ${dm ? 'text-white' : 'text-gray-900'}`}>{agents.filter(a => a.status === 'active').length}<span className={`text-lg ${dm ? 'text-white/30' : 'text-gray-400'}`}>/5</span></p>
                         <p className="text-emerald-400 text-sm font-mono mb-1.5 flex items-center">
-                            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2"></span> Online
+                            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2"></span> Онлайн
                         </p>
                     </div>
                 </div>
@@ -1528,7 +1528,7 @@ const WorkforceView = ({ agents, onEditAgent, onDeployAgent, darkMode }: { agent
                         <div className={`w-7 h-7 rounded-lg flex items-center justify-center ${dm ? 'icon-bg-cyan' : 'bg-blue-50'}`}>
                             <ChatBubbleIcon className="w-3.5 h-3.5 icon-cyan" />
                         </div>
-                        <p className={`text-xs font-mono uppercase tracking-widest ${dm ? 'text-white/40' : 'text-gray-500'}`}>Total Conversations</p>
+                        <p className={`text-xs font-mono uppercase tracking-widest ${dm ? 'text-white/40' : 'text-gray-500'}`}>Всего диалогов</p>
                     </div>
                     <div className="flex items-end gap-3">
                         <p className={`text-3xl font-medium ${dm ? 'text-white' : 'text-gray-900'}`}>5,480</p>
@@ -1542,11 +1542,11 @@ const WorkforceView = ({ agents, onEditAgent, onDeployAgent, darkMode }: { agent
                         <div className={`w-7 h-7 rounded-lg flex items-center justify-center ${dm ? 'icon-bg-amber' : 'bg-yellow-50'}`}>
                             <TrendingUpIcon className="w-3.5 h-3.5 icon-amber" />
                         </div>
-                        <p className={`text-xs font-mono uppercase tracking-widest ${dm ? 'text-white/40' : 'text-gray-500'}`}>Est. Cost Saved</p>
+                        <p className={`text-xs font-mono uppercase tracking-widest ${dm ? 'text-white/40' : 'text-gray-500'}`}>Экономия (оценка)</p>
                     </div>
                     <div className="flex items-end gap-3">
-                        <p className="text-3xl text-emerald-400 font-medium">$12,400</p>
-                        <p className={`text-sm font-mono mb-1.5 ${dm ? 'text-white/30' : 'text-gray-500'}`}>vs Human</p>
+                        <p className="text-3xl text-emerald-400 font-medium">1 240 000 ₽</p>
+                        <p className={`text-sm font-mono mb-1.5 ${dm ? 'text-white/30' : 'text-gray-500'}`}>vs Сотрудник</p>
                     </div>
                 </div>
             </div>
@@ -1580,11 +1580,11 @@ const WorkforceView = ({ agents, onEditAgent, onDeployAgent, darkMode }: { agent
 
                         <div className={`grid grid-cols-2 gap-4 border-t pt-4 ${dm ? 'border-white/8' : 'border-gray-100'}`}>
                             <div>
-                                <p className={`text-[10px] uppercase tracking-wider ${dm ? 'text-white/30' : 'text-gray-400'}`}>Conversations</p>
+                                <p className={`text-[10px] uppercase tracking-wider ${dm ? 'text-white/30' : 'text-gray-400'}`}>Диалоги</p>
                                 <p className={`font-mono font-medium ${dm ? 'text-white/90' : 'text-gray-900'}`}>{agent.stats.conversations.toLocaleString()}</p>
                             </div>
                              <div>
-                                <p className={`text-[10px] uppercase tracking-wider ${dm ? 'text-white/30' : 'text-gray-400'}`}>Leads</p>
+                                <p className={`text-[10px] uppercase tracking-wider ${dm ? 'text-white/30' : 'text-gray-400'}`}>Лиды</p>
                                 <p className={`font-mono font-medium ${dm ? 'text-white/90' : 'text-gray-900'}`}>{agent.stats.leads.toLocaleString()}</p>
                             </div>
                         </div>
@@ -1599,7 +1599,7 @@ const WorkforceView = ({ agents, onEditAgent, onDeployAgent, darkMode }: { agent
                     <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-colors ${dm ? 'bg-white/5 group-hover:bg-white/10' : 'bg-gray-100 group-hover:bg-gray-200'}`}>
                         <PlusIcon />
                     </div>
-                    <span className={`text-sm font-medium ${dm ? 'text-white/40 group-hover:text-white/60' : 'text-gray-400'}`}>Deploy New Agent</span>
+                    <span className={`text-sm font-medium ${dm ? 'text-white/40 group-hover:text-white/60' : 'text-gray-400'}`}>Создать нового агента</span>
                 </button>
             </div>
         </div>
@@ -1611,7 +1611,7 @@ const AnalyticsView = ({ darkMode }: { darkMode: boolean }) => {
 
     return (
         <div className="p-8 max-w-7xl mx-auto w-full">
-            <h2 className={`text-3xl font-serif mb-8 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Performance Analytics</h2>
+            <h2 className={`text-3xl font-serif mb-8 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Аналитика эффективности</h2>
 
             {/* Top Cards (KPIs) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -1620,10 +1620,10 @@ const AnalyticsView = ({ darkMode }: { darkMode: boolean }) => {
                         <div className={`w-7 h-7 rounded-lg flex items-center justify-center ${darkMode ? 'icon-bg-emerald' : 'bg-green-50'}`}>
                             <TrendingUpIcon className="w-3.5 h-3.5 icon-emerald" />
                         </div>
-                        <p className={`text-xs font-mono uppercase tracking-widest ${darkMode ? 'text-white/40' : 'text-gray-500'}`}>Total Revenue</p>
+                        <p className={`text-xs font-mono uppercase tracking-widest ${darkMode ? 'text-white/40' : 'text-gray-500'}`}>Общая выручка</p>
                     </div>
                     <div className="flex items-end gap-3">
-                        <p className={`text-4xl font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>$325,321</p>
+                        <p className={`text-4xl font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>32,5 млн ₽</p>
                         <p className="text-green-400 text-sm font-mono mb-1.5 flex items-center">
                             <TrendingUpIcon className="w-4 h-4 mr-1" /> +12%
                         </p>
@@ -1634,7 +1634,7 @@ const AnalyticsView = ({ darkMode }: { darkMode: boolean }) => {
                         <div className={`w-7 h-7 rounded-lg flex items-center justify-center ${darkMode ? 'icon-bg-cyan' : 'bg-blue-50'}`}>
                             <UsersIcon className="w-3.5 h-3.5 icon-cyan" />
                         </div>
-                        <p className={`text-xs font-mono uppercase tracking-widest ${darkMode ? 'text-white/40' : 'text-gray-500'}`}>Active Leads</p>
+                        <p className={`text-xs font-mono uppercase tracking-widest ${darkMode ? 'text-white/40' : 'text-gray-500'}`}>Активные лиды</p>
                     </div>
                      <div className="flex items-end gap-3">
                         <p className={`text-4xl font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>1,240</p>
@@ -1648,12 +1648,12 @@ const AnalyticsView = ({ darkMode }: { darkMode: boolean }) => {
                         <div className={`w-7 h-7 rounded-lg flex items-center justify-center ${darkMode ? 'icon-bg-purple' : 'bg-purple-50'}`}>
                             <ChatBubbleIcon className="w-3.5 h-3.5 icon-purple" />
                         </div>
-                        <p className={`text-xs font-mono uppercase tracking-widest ${darkMode ? 'text-white/40' : 'text-gray-500'}`}>Avg. Response Time</p>
+                        <p className={`text-xs font-mono uppercase tracking-widest ${darkMode ? 'text-white/40' : 'text-gray-500'}`}>Среднее время ответа</p>
                     </div>
                      <div className="flex items-end gap-3">
                         <p className={`text-4xl font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>45s</p>
                         <p className="text-green-400 text-sm font-mono mb-1.5 flex items-center">
-                             -98% vs Human
+                             -98% vs Сотрудник
                         </p>
                     </div>
                 </div>
@@ -1663,11 +1663,11 @@ const AnalyticsView = ({ darkMode }: { darkMode: boolean }) => {
                 {/* Main Chart Card */}
                 <div className={`p-8 rounded-3xl ${darkMode ? 'glass-card' : 'bg-white border border-gray-200 shadow-sm'}`}>
                     <div className="flex items-center justify-between mb-2">
-                        <p className="text-gray-500 text-xs font-mono uppercase tracking-widest">Revenue Growth</p>
+                        <p className="text-gray-500 text-xs font-mono uppercase tracking-widest">Рост выручки</p>
                     </div>
                     <div>
-                        <span className={`text-3xl font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>$45,200</span>
-                        <span className="text-green-400 text-sm ml-3 font-mono">+3.9% this month</span>
+                        <span className={`text-3xl font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>4,5 млн ₽</span>
+                        <span className="text-green-400 text-sm ml-3 font-mono">+3.9% за месяц</span>
                     </div>
 
                     <RevenueChart darkMode={darkMode} />
@@ -1692,15 +1692,15 @@ const AnalyticsView = ({ darkMode }: { darkMode: boolean }) => {
                 {/* Allocation / Breakdown Card */}
                 <div className={`p-8 rounded-3xl flex flex-col ${darkMode ? 'glass-card' : 'bg-white border border-gray-200 shadow-sm'}`}>
                     <div className="mb-6">
-                        <p className="text-gray-500 text-xs font-mono uppercase tracking-widest mb-1">Lead Sources</p>
-                        <h3 className={`text-xl font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>Traffic Allocation</h3>
+                        <p className="text-gray-500 text-xs font-mono uppercase tracking-widest mb-1">Источники лидов</p>
+                        <h3 className={`text-xl font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>Распределение трафика</h3>
                     </div>
 
                     <div className="space-y-6 flex-grow">
-                        <ProgressBar label="Inbound (Website)" percentage={40.2} modelPercentage={56} color="bg-blue-500" darkMode={darkMode} />
-                        <ProgressBar label="Outbound (Email)" percentage={14.2} modelPercentage={24} color="bg-yellow-500" darkMode={darkMode} />
-                        <ProgressBar label="WhatsApp / Chat" percentage={25} modelPercentage={31} color="bg-orange-500" darkMode={darkMode} />
-                        <ProgressBar label="Referral" percentage={37.6} modelPercentage={18.3} color="bg-green-500" darkMode={darkMode} />
+                        <ProgressBar label="Входящий (Сайт)" percentage={40.2} modelPercentage={56} color="bg-blue-500" darkMode={darkMode} />
+                        <ProgressBar label="Исходящий (Email)" percentage={14.2} modelPercentage={24} color="bg-yellow-500" darkMode={darkMode} />
+                        <ProgressBar label="WhatsApp / Чат" percentage={25} modelPercentage={31} color="bg-orange-500" darkMode={darkMode} />
+                        <ProgressBar label="Реферальный" percentage={37.6} modelPercentage={18.3} color="bg-green-500" darkMode={darkMode} />
                     </div>
                 </div>
             </div>
@@ -1709,42 +1709,42 @@ const AnalyticsView = ({ darkMode }: { darkMode: boolean }) => {
             <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div className={`p-6 rounded-2xl col-span-1 lg:col-span-2 ${darkMode ? 'glass-card' : 'bg-white border border-gray-200 shadow-sm'}`}>
                     <div className="flex items-center justify-between mb-6">
-                        <p className="text-gray-500 text-xs font-mono uppercase tracking-widest">Business Insights</p>
+                        <p className="text-gray-500 text-xs font-mono uppercase tracking-widest">Бизнес-аналитика</p>
                          <div className="flex gap-2">
                             <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-                            <span className="text-[10px] text-blue-400 font-mono uppercase">AI Analysis</span>
+                            <span className="text-[10px] text-blue-400 font-mono uppercase">ИИ-анализ</span>
                          </div>
                     </div>
                     <div className="space-y-4">
                          <div className={`flex gap-4 p-4 rounded-xl border ${darkMode ? 'bg-white/5 border-white/5' : 'bg-gray-50 border-gray-100'}`}>
                              <TrendingUpIcon className="text-green-400 w-6 h-6 shrink-0" />
                              <div>
-                                 <h4 className={`text-sm font-medium mb-1 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Conversion Spike Detected</h4>
-                                 <p className="text-xs text-gray-400 leading-relaxed">Sales Agent 'Alex' has increased conversion rates by 15% during off-hours (6 PM - 12 AM). Recommendation: Scale ad spend during these hours.</p>
+                                 <h4 className={`text-sm font-medium mb-1 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Зафиксирован скачок конверсии</h4>
+                                 <p className="text-xs text-gray-400 leading-relaxed">Агент продаж «Alex» увеличил конверсию на 15% в нерабочее время (18:00–00:00). Рекомендация: увеличить бюджет на рекламу в эти часы.</p>
                              </div>
                          </div>
                          <div className={`flex gap-4 p-4 rounded-xl border ${darkMode ? 'bg-white/5 border-white/5' : 'bg-gray-50 border-gray-100'}`}>
                              <TrendingDownIcon className="text-red-400 w-6 h-6 shrink-0" />
                              <div>
-                                 <h4 className={`text-sm font-medium mb-1 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Churn Risk Alert</h4>
-                                 <p className="text-xs text-gray-400 leading-relaxed">Engagement with 'Enterprise' leads has dropped 8% this week. Suggest updating the follow-up script for high-value prospects.</p>
+                                 <h4 className={`text-sm font-medium mb-1 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Риск оттока клиентов</h4>
+                                 <p className="text-xs text-gray-400 leading-relaxed">Вовлечённость корпоративных лидов снизилась на 8% за эту неделю. Рекомендуется обновить скрипт повторных касаний для высокоценных клиентов.</p>
                              </div>
                          </div>
                     </div>
                 </div>
 
                 <div className={`p-6 rounded-2xl ${darkMode ? 'glass-card' : 'bg-white border border-gray-200 shadow-sm'}`}>
-                     <p className="text-gray-500 text-xs font-mono uppercase tracking-widest mb-4">Markets at a Glance</p>
+                     <p className="text-gray-500 text-xs font-mono uppercase tracking-widest mb-4">Рынки: краткий обзор</p>
                      
                      <div className="space-y-6">
                         <div>
                              <div className="flex justify-between items-end mb-2">
                                  <div>
-                                     <p className={`text-sm font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>Ad Spend</p>
+                                     <p className={`text-sm font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>Рекламный бюджет</p>
                                      <p className="text-[10px] text-gray-500">Google Ads</p>
                                  </div>
                                  <div className="text-right">
-                                     <p className={`text-sm font-mono ${darkMode ? 'text-white' : 'text-gray-900'}`}>$42.34k</p>
+                                     <p className={`text-sm font-mono ${darkMode ? 'text-white' : 'text-gray-900'}`}>4,2 млн ₽</p>
                                      <p className="text-[10px] text-green-400 font-mono">1.78% ↗</p>
                                  </div>
                              </div>
@@ -1758,10 +1758,10 @@ const AnalyticsView = ({ darkMode }: { darkMode: boolean }) => {
                              <div className="flex justify-between items-end mb-2">
                                  <div>
                                      <p className={`text-sm font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>CAC</p>
-                                     <p className="text-[10px] text-gray-500">Cost per Customer</p>
+                                     <p className="text-[10px] text-gray-500">Стоимость привлечения</p>
                                  </div>
                                  <div className="text-right">
-                                     <p className={`text-sm font-mono ${darkMode ? 'text-white' : 'text-gray-900'}`}>$18.96</p>
+                                     <p className={`text-sm font-mono ${darkMode ? 'text-white' : 'text-gray-900'}`}>1 896 ₽</p>
                                      <p className="text-[10px] text-red-400 font-mono">7.83% ↘</p>
                                  </div>
                              </div>
@@ -1780,42 +1780,42 @@ const AnalyticsView = ({ darkMode }: { darkMode: boolean }) => {
 const SettingsView = ({ darkMode }: { darkMode: boolean; toggleDarkMode: () => void }) => {
     return (
         <div className="p-8 max-w-4xl mx-auto w-full">
-            <h2 className={`text-3xl font-serif mb-8 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Settings</h2>
+            <h2 className={`text-3xl font-serif mb-8 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Настройки</h2>
 
             <div className={`rounded-2xl overflow-hidden mb-8 ${darkMode ? 'glass-card' : 'bg-white border border-gray-200 shadow-sm'}`}>
                 <div className={`p-8 border-b flex flex-col md:flex-row justify-between items-start md:items-center gap-4 ${darkMode ? 'border-white/8' : 'border-gray-200'}`}>
                     <div>
-                        <p className="text-gray-500 text-xs font-mono uppercase tracking-widest mb-1">Current Plan</p>
-                        <h3 className={`text-3xl font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>Pro Plan</h3>
+                        <p className="text-gray-500 text-xs font-mono uppercase tracking-widest mb-1">Текущий тариф</p>
+                        <h3 className={`text-3xl font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>Тариф Pro</h3>
                     </div>
                     <div className="text-right">
-                        <p className={`text-2xl font-mono ${darkMode ? 'text-white' : 'text-gray-900'}`}>$89<span className="text-sm text-gray-500">/mo</span></p>
-                        <p className="text-xs text-green-400">Next billing: Apr 12, 2026</p>
+                        <p className={`text-2xl font-mono ${darkMode ? 'text-white' : 'text-gray-900'}`}>24 900 ₽<span className="text-sm text-gray-500">/мес</span></p>
+                        <p className="text-xs text-green-400">Следующий платёж: 12 апр 2026</p>
                     </div>
                 </div>
                 <div className={`p-8 ${darkMode ? 'bg-white/[0.02]' : 'bg-gray-50'}`}>
                     <div className={`mb-4 flex justify-between text-sm ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-                        <span>Agent Usage</span>
-                        <span>3 / 5 Agents</span>
+                        <span>Использование агентов</span>
+                        <span>3 / 5 агентов</span>
                     </div>
                     <div className={`w-full rounded-full h-2 mb-6 ${darkMode ? 'bg-white/10' : 'bg-gray-200'}`}>
                         <div className="bg-[#00C2FF] h-2 rounded-full w-[60%]"></div>
                     </div>
                     <button className={`text-sm border rounded-lg px-4 py-2 transition-colors ${darkMode ? 'text-white border-white/20 hover:bg-white hover:text-black' : 'text-gray-900 border-gray-300 hover:bg-black hover:text-white'}`}>
-                        Manage Subscription
+                        Управление подпиской
                     </button>
                 </div>
             </div>
 
             <div className={`rounded-2xl p-8 ${darkMode ? 'glass-card' : 'bg-white border border-gray-200 shadow-sm'}`}>
-                <h4 className={`font-medium mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Profile Details</h4>
+                <h4 className={`font-medium mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Данные профиля</h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-2">
-                        <label className="text-xs text-gray-500">Email Address</label>
+                        <label className="text-xs text-gray-500">Электронная почта</label>
                         <input type="email" value="alex@example.com" disabled className={`w-full rounded-lg px-4 py-3 cursor-not-allowed ${darkMode ? 'glass-input text-gray-400 opacity-60' : 'bg-gray-50 border border-gray-200 text-gray-500'}`} />
                     </div>
                     <div className="space-y-2">
-                        <label className="text-xs text-gray-500">Company Name</label>
+                        <label className="text-xs text-gray-500">Название компании</label>
                         <input type="text" defaultValue="Acme Corp" className={`w-full rounded-lg px-4 py-3 outline-none ${darkMode ? 'glass-input text-white' : 'bg-gray-50 border border-gray-200 text-gray-900 focus:border-black'}`} />
                     </div>
                 </div>
@@ -1835,7 +1835,7 @@ const AgentFilter = ({ agents, selectedId, onChange, darkMode }: { agents: Agent
                 onClick={() => onChange('all')}
                 className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${selectedId === 'all' ? (dm ? 'bg-white/10 text-white' : 'bg-gray-200 text-gray-900') : (dm ? 'text-gray-500 hover:text-white hover:bg-white/5' : 'text-gray-500 hover:text-gray-900 hover:bg-gray-100')}`}
             >
-                All Agents
+                Все агенты
             </button>
             {agents.map(agent => (
                 <button
@@ -1861,9 +1861,9 @@ const ChannelsListView = ({ darkMode, agents }: { darkMode: boolean; agents: Age
     return (
         <div className="p-8 max-w-6xl mx-auto w-full">
             <div className="flex items-center justify-between mb-6">
-                <h2 className={`text-3xl font-serif ${dm ? 'text-white' : 'text-gray-900'}`}>Channels</h2>
+                <h2 className={`text-3xl font-serif ${dm ? 'text-white' : 'text-gray-900'}`}>Каналы</h2>
                 <button className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${dm ? 'bg-white text-black hover:bg-gray-200' : 'bg-black text-white hover:bg-gray-800'}`}>
-                    <PlusIcon /> Connect Channel
+                    <PlusIcon /> Подключить канал
                 </button>
             </div>
 
@@ -1903,22 +1903,22 @@ const ChannelsListView = ({ darkMode, agents }: { darkMode: boolean; agents: Age
                                 {ch.status === 'connected' && (
                                     <div className={`pt-3 border-t ${dm ? 'border-white/5' : 'border-gray-100'}`}>
                                         <div className="flex justify-between items-center">
-                                            <span className={`text-[10px] uppercase tracking-wider ${dm ? 'text-white/30' : 'text-gray-400'}`}>Messages</span>
+                                            <span className={`text-[10px] uppercase tracking-wider ${dm ? 'text-white/30' : 'text-gray-400'}`}>Сообщения</span>
                                             <span className={`text-sm font-mono ${dm ? 'text-white/80' : 'text-gray-900'}`}>{ch.messages.toLocaleString()}</span>
                                         </div>
                                     </div>
                                 )}
                                 {ch.status === 'disconnected' && (
                                     <button className={`w-full mt-3 py-2 rounded-lg text-xs font-medium border border-dashed transition-colors ${dm ? 'border-white/10 text-gray-500 hover:border-white/30 hover:text-white' : 'border-gray-300 text-gray-400 hover:border-gray-400 hover:text-gray-600'}`}>
-                                        Connect
+                                        Подключить
                                     </button>
                                 )}
                             </div>
                         ))}
                         {agent.channels.length === 0 && (
                             <div className={`col-span-full p-8 text-center border border-dashed rounded-2xl ${dm ? 'border-white/10 text-gray-600' : 'border-gray-200 text-gray-400'}`}>
-                                <p className="text-sm mb-2">No channels connected</p>
-                                <button className={`text-xs font-medium ${dm ? 'text-[#00C2FF]' : 'text-blue-600'}`}>+ Add Channel</button>
+                                <p className="text-sm mb-2">Нет подключённых каналов</p>
+                                <button className={`text-xs font-medium ${dm ? 'text-[#00C2FF]' : 'text-blue-600'}`}>+ Добавить канал</button>
                             </div>
                         )}
                     </div>
@@ -1939,11 +1939,11 @@ const KnowledgeView = ({ darkMode, agents }: { darkMode: boolean; agents: Agent[
         <div className="p-8 max-w-6xl mx-auto w-full">
             <div className="flex items-center justify-between mb-6">
                 <div>
-                    <h2 className={`text-3xl font-serif ${dm ? 'text-white' : 'text-gray-900'}`}>Knowledge Base</h2>
-                    <p className={`text-sm mt-1 ${dm ? 'text-white/40' : 'text-gray-500'}`}>Training data and documents for your AI agents</p>
+                    <h2 className={`text-3xl font-serif ${dm ? 'text-white' : 'text-gray-900'}`}>База знаний</h2>
+                    <p className={`text-sm mt-1 ${dm ? 'text-white/40' : 'text-gray-500'}`}>Обучающие данные и документы для ваших ИИ-агентов</p>
                 </div>
                 <button className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${dm ? 'bg-white text-black hover:bg-gray-200' : 'bg-black text-white hover:bg-gray-800'}`}>
-                    <PlusIcon /> Upload Source
+                    <PlusIcon /> Загрузить источник
                 </button>
             </div>
 
@@ -1954,15 +1954,15 @@ const KnowledgeView = ({ darkMode, agents }: { darkMode: boolean; agents: Agent[
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className={`p-5 rounded-2xl ${dm ? 'glass-stat' : 'bg-white border border-gray-200 shadow-sm'}`}>
-                    <p className={`text-xs font-mono uppercase tracking-widest mb-1 ${dm ? 'text-white/40' : 'text-gray-500'}`}>Sources</p>
+                    <p className={`text-xs font-mono uppercase tracking-widest mb-1 ${dm ? 'text-white/40' : 'text-gray-500'}`}>Источников</p>
                     <p className={`text-2xl font-medium ${dm ? 'text-white' : 'text-gray-900'}`}>{allSources.length}</p>
                 </div>
                 <div className={`p-5 rounded-2xl ${dm ? 'glass-stat' : 'bg-white border border-gray-200 shadow-sm'}`}>
-                    <p className={`text-xs font-mono uppercase tracking-widest mb-1 ${dm ? 'text-white/40' : 'text-gray-500'}`}>Agents</p>
+                    <p className={`text-xs font-mono uppercase tracking-widest mb-1 ${dm ? 'text-white/40' : 'text-gray-500'}`}>Агентов</p>
                     <p className={`text-2xl font-medium ${dm ? 'text-white' : 'text-gray-900'}`}>{filteredAgents.length}</p>
                 </div>
                 <div className={`p-5 rounded-2xl ${dm ? 'glass-stat' : 'bg-white border border-gray-200 shadow-sm'}`}>
-                    <p className={`text-xs font-mono uppercase tracking-widest mb-1 ${dm ? 'text-white/40' : 'text-gray-500'}`}>Processing</p>
+                    <p className={`text-xs font-mono uppercase tracking-widest mb-1 ${dm ? 'text-white/40' : 'text-gray-500'}`}>Обработка</p>
                     <p className={`text-2xl font-medium ${dm ? 'text-amber-400' : 'text-amber-600'}`}>{allSources.filter(s => s.status === 'processing').length}</p>
                 </div>
             </div>
@@ -1971,16 +1971,16 @@ const KnowledgeView = ({ darkMode, agents }: { darkMode: boolean; agents: Agent[
             <div className={`rounded-2xl overflow-hidden ${dm ? 'glass-card' : 'bg-white border border-gray-200 shadow-sm'}`}>
                 <div className={`px-6 py-4 border-b ${dm ? 'border-white/5' : 'border-gray-100'}`}>
                     <div className="grid grid-cols-12 text-[10px] font-mono uppercase tracking-widest text-gray-500">
-                        <div className="col-span-5">File</div>
-                        <div className="col-span-2">Type</div>
-                        <div className="col-span-2">Agent</div>
-                        <div className="col-span-2">Synced</div>
-                        <div className="col-span-1">Status</div>
+                        <div className="col-span-5">Файл</div>
+                        <div className="col-span-2">Тип</div>
+                        <div className="col-span-2">Агент</div>
+                        <div className="col-span-2">Синхронизация</div>
+                        <div className="col-span-1">Статус</div>
                     </div>
                 </div>
                 {allSources.length === 0 ? (
                     <div className={`px-6 py-12 text-center ${dm ? 'text-gray-600' : 'text-gray-400'}`}>
-                        <p className="text-sm">No knowledge sources yet</p>
+                        <p className="text-sm">Источники базы знаний не добавлены</p>
                     </div>
                 ) : allSources.map(src => (
                     <div key={src.id} className={`px-6 py-4 border-b last:border-b-0 transition-colors group cursor-pointer ${dm ? 'border-white/5 hover:bg-white/[0.02]' : 'border-gray-50 hover:bg-gray-50'}`}>
@@ -2023,9 +2023,9 @@ const KnowledgeView = ({ darkMode, agents }: { darkMode: boolean; agents: Agent[
 type ConvWithAgent = AgentConversation & { agentName: string; agentImage: string; agentId: string };
 
 const KANBAN_COLUMNS: { key: AgentConversation['status']; label: string; color: string; bg: string; border: string }[] = [
-    { key: 'active',    label: 'Active',    color: 'text-blue-400',    bg: 'bg-blue-500/10',    border: 'border-blue-500/20' },
-    { key: 'escalated', label: 'Escalated', color: 'text-red-400',     bg: 'bg-red-500/10',     border: 'border-red-500/20' },
-    { key: 'resolved',  label: 'Resolved',  color: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20' },
+    { key: 'active',    label: 'Активные',     color: 'text-blue-400',    bg: 'bg-blue-500/10',    border: 'border-blue-500/20' },
+    { key: 'escalated', label: 'Эскалированы', color: 'text-red-400',     bg: 'bg-red-500/10',     border: 'border-red-500/20' },
+    { key: 'resolved',  label: 'Завершены',    color: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20' },
 ];
 
 const ConversationsView = ({ darkMode, agents }: { darkMode: boolean; agents: Agent[] }) => {
@@ -2078,10 +2078,10 @@ const ConversationsView = ({ darkMode, agents }: { darkMode: boolean; agents: Ag
                 {/* Header */}
                 <div className="px-6 pt-6 pb-0 shrink-0">
                     <div className="flex items-center justify-between mb-4">
-                        <h2 className={`text-2xl font-serif ${dm ? 'text-white' : 'text-gray-900'}`}>Conversations</h2>
+                        <h2 className={`text-2xl font-serif ${dm ? 'text-white' : 'text-gray-900'}`}>Диалоги</h2>
                         <div className={`flex items-center gap-2 px-3 py-1.5 rounded-xl text-sm ${dm ? 'glass-input' : 'bg-white border border-gray-200'}`}>
                             <SearchIcon className="w-3.5 h-3.5 text-gray-500" />
-                            <input placeholder="Search..." className={`bg-transparent outline-none text-xs w-32 ${dm ? 'text-white placeholder-gray-600' : 'text-gray-900 placeholder-gray-400'}`} />
+                            <input placeholder="Поиск..." className={`bg-transparent outline-none text-xs w-32 ${dm ? 'text-white placeholder-gray-600' : 'text-gray-900 placeholder-gray-400'}`} />
                         </div>
                     </div>
                     <div className="mb-4">
@@ -2117,7 +2117,7 @@ const ConversationsView = ({ darkMode, agents }: { darkMode: boolean; agents: Ag
                                 }`}>
                                     {convs.length === 0 ? (
                                         <div className={`text-center py-8 text-[11px] ${dm ? 'text-gray-600' : 'text-gray-400'}`}>
-                                            Drop here
+                                            Перетащите сюда
                                         </div>
                                     ) : convs.map(conv => (
                                         <div
@@ -2364,35 +2364,35 @@ const Dashboard: React.FC<DashboardProps> = ({ onLogout }) => {
                     {/* Nav Items */}
                     <NavItem
                         icon={<ChatBubbleIcon className="w-4 h-4" />}
-                        label="Architect"
+                        label="Архитектор"
                         active={currentView === 'chat'}
                         onClick={() => setCurrentView('chat')}
                         darkMode={darkMode}
                     />
                     <NavItem
                         icon={<UsersIcon className="w-4 h-4" />}
-                        label="Workforce"
+                        label="Сотрудники"
                         active={currentView === 'agents' || currentView === 'agent-detail'}
                         onClick={() => setCurrentView('agents')}
                         darkMode={darkMode}
                     />
                     <NavItem
                         icon={<ChannelIcon />}
-                        label="Channels"
+                        label="Каналы"
                         active={currentView === 'channels'}
                         onClick={() => setCurrentView('channels')}
                         darkMode={darkMode}
                     />
                     <NavItem
                         icon={<BookIcon />}
-                        label="Knowledge"
+                        label="База знаний"
                         active={currentView === 'knowledge'}
                         onClick={() => setCurrentView('knowledge')}
                         darkMode={darkMode}
                     />
                     <NavItem
                         icon={<MessagesIcon />}
-                        label="Conversations"
+                        label="Диалоги"
                         active={currentView === 'conversations'}
                         onClick={() => setCurrentView('conversations')}
                         darkMode={darkMode}
@@ -2400,7 +2400,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onLogout }) => {
                     />
                     <NavItem
                         icon={<PieChartIcon className="w-4 h-4" />}
-                        label="Analytics"
+                        label="Аналитика"
                         active={currentView === 'analytics'}
                         onClick={() => setCurrentView('analytics')}
                         darkMode={darkMode}
@@ -2413,7 +2413,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onLogout }) => {
                     <button
                         onClick={toggleDarkMode}
                         className={`p-2 rounded-xl transition-colors ${darkMode ? 'text-gray-500 hover:text-white hover:bg-white/5' : 'text-gray-400 hover:text-gray-900 hover:bg-gray-100'}`}
-                        title={darkMode ? 'Light mode' : 'Dark mode'}
+                        title={darkMode ? 'Светлая тема' : 'Тёмная тема'}
                     >
                         {darkMode ? <SunIcon className="w-4 h-4" /> : <MoonIcon className="w-4 h-4" />}
                     </button>
@@ -2433,7 +2433,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onLogout }) => {
                     <button
                         onClick={onLogout}
                         className={`flex items-center gap-2 px-3 py-2 rounded-xl text-sm transition-colors group ${darkMode ? 'hover:bg-red-500/10 text-gray-500 hover:text-red-400' : 'hover:bg-red-50 text-gray-500 hover:text-red-600'}`}
-                        title="Log out"
+                        title="Выйти"
                     >
                         <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold ${darkMode ? 'bg-white/10 text-white/60' : 'bg-gray-200 text-gray-600'}`}>A</div>
                         <LogOutIcon className="w-4 h-4 hidden lg:block" />
@@ -2450,7 +2450,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onLogout }) => {
                             <div className="flex items-center justify-center h-full">
                                 <div className="text-center">
                                     <div className={`inline-block w-8 h-8 border-4 border-t-transparent rounded-full animate-spin ${darkMode ? 'border-white/20' : 'border-gray-300'}`}></div>
-                                    <p className={`mt-4 text-sm ${darkMode ? 'text-white/60' : 'text-gray-500'}`}>Loading agents...</p>
+                                    <p className={`mt-4 text-sm ${darkMode ? 'text-white/60' : 'text-gray-500'}`}>Загрузка агентов...</p>
                                 </div>
                             </div>
                         ) : error ? (
@@ -2461,7 +2461,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onLogout }) => {
                                         onClick={() => window.location.reload()}
                                         className={`mt-4 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${darkMode ? 'bg-white/10 hover:bg-white/20 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-900'}`}
                                     >
-                                        Retry
+                                        Повторить
                                     </button>
                                 </div>
                             </div>

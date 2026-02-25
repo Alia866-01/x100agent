@@ -212,7 +212,7 @@ const MockAnalyticsScreen = () => {
                 <div className="flex justify-between items-end mb-6 relative z-10">
                     <div>
                         <div className="text-[10px] text-gray-500 uppercase tracking-widest mb-1 font-mono">{t('demo.mock.analytics.roi')}</div>
-                        <div className="text-4xl text-white font-light tracking-tight">$325k</div>
+                        <div className="text-4xl text-white font-light tracking-tight">32,5 млн ₽</div>
                     </div>
                     <div className="text-green-400 text-xs font-mono flex items-center bg-green-500/10 px-2 py-1 rounded border border-green-500/20">
                         <TrendingUpIcon className="w-3 h-3 mr-1" /> +124%
@@ -248,7 +248,7 @@ const MockAnalyticsScreen = () => {
                         <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">{t('demo.mock.analytics.cost_lead')}</div>
                         <ArrowUp className="w-3 h-3 text-green-500 rotate-180" />
                     </div>
-                    <div className="text-xl text-white font-light">$0.35 <span className="text-xs text-gray-600 ml-1">{t('demo.mock.analytics.avg')}</span></div>
+                    <div className="text-xl text-white font-light">35 ₽ <span className="text-xs text-gray-600 ml-1">{t('demo.mock.analytics.avg')}</span></div>
                 </div>
             </div>
         </div>

@@ -126,7 +126,7 @@ const translations: Translations = {
         'comp.ai': 'X100 AI',
         'comp.m1': 'Response time', 'comp.h1': '2–8 hours', 'comp.a1': '3 seconds',
         'comp.m2': 'Availability', 'comp.h2': '5 days, 9-5', 'comp.a2': '24/7/365',
-        'comp.m3': 'Monthly cost', 'comp.h3': '$600+', 'comp.a3': 'from $35',
+        'comp.m3': 'Monthly cost', 'comp.h3': '60 000 ₽+', 'comp.a3': 'from 14 900 ₽',
         'comp.m4': 'Training time', 'comp.h4': '3–4 weeks', 'comp.a4': '7 minutes',
         'comp.m5': 'Concurrent chats', 'comp.h5': '1–2', 'comp.a5': 'Unlimited',
         'comp.disclaimer': "*X100 doesn't replace people. It handles repetitive work so your team can focus on what actually matters.",
@@ -394,7 +394,7 @@ const translations: Translations = {
 
         // Visual Mocks in ProductSections
         'visual.sales.user': 'How much for the enterprise plan?',
-        'visual.sales.agent': "It's $249/mo. It includes unlimited agents and a dedicated account manager. Would you like to book a demo?",
+        'visual.sales.agent': "It's 39 900 ₽/mo. It includes unlimited agents and a dedicated account manager. Would you like to book a demo?",
         'visual.sales.tag': 'Lead Qualified: Hot 🔥',
 
         'visual.reception.calendar': 'Calendar',
@@ -473,11 +473,11 @@ const translations: Translations = {
         'advisor.active': 'Active Now',
         'advisor.cost': 'Cost',
         'advisor.human': 'Human Equivalent',
-        'advisor.price.89': '$89/mo',
-        'advisor.price.5000': '$5,000/mo',
-        'advisor.price.3500': '$3,500/mo',
-        'advisor.price.3000': '$3,000/mo',
-        'advisor.price.4500': '$4,500/mo',
+        'advisor.price.89': '24 900 ₽/мес',
+        'advisor.price.5000': '500 000 ₽/мес',
+        'advisor.price.3500': '350 000 ₽/мес',
+        'advisor.price.3000': '300 000 ₽/мес',
+        'advisor.price.4500': '450 000 ₽/мес',
 
         // Agents
         'advisor.agent.sales.name': 'Sales Manager', 'advisor.agent.sales.role': 'Revenue Growth',
@@ -497,7 +497,7 @@ const translations: Translations = {
         'advisor.agent.recruiter.benefit': "Delivers the perfect candidate on a silver platter.",
 
         // Visuals
-        'advisor.visual.sales.p1.title': 'New Stripe Payment: $1,200', 'advisor.visual.sales.p1.sub': 'Closed from WhatsApp Lead',
+        'advisor.visual.sales.p1.title': 'New Stripe Payment: 120 000 ₽', 'advisor.visual.sales.p1.sub': 'Closed from WhatsApp Lead',
         'advisor.visual.sales.p2.title': 'Lead Qualified: TechCorp', 'advisor.visual.sales.p2.sub': 'Budget: Enterprise • Ready to buy',
         'advisor.visual.sales.p3.title': 'Demo Booked: Tuesday 2pm', 'advisor.visual.sales.p3.sub': 'Auto-scheduled via Calendar',
         'advisor.visual.sales.today': "Today's Pipeline",
@@ -692,7 +692,7 @@ const translations: Translations = {
         'comp.ai': 'X100 AI',
         'comp.m1': 'Время ответа', 'comp.h1': '2–8 часов', 'comp.a1': '3 секунды',
         'comp.m2': 'Доступность', 'comp.h2': '5 дней, 9-18', 'comp.a2': '24/7/365',
-        'comp.m3': 'Стоимость/мес', 'comp.h3': '$600+', 'comp.a3': 'от $35',
+        'comp.m3': 'Стоимость/мес', 'comp.h3': '60 000 ₽+', 'comp.a3': 'от 14 900 ₽',
         'comp.m4': 'Обучение', 'comp.h4': '3–4 недели', 'comp.a4': '7 минут',
         'comp.m5': 'Параллельные чаты', 'comp.h5': '1–2', 'comp.a5': 'Безлимитно',
         'comp.disclaimer': "*X100 не заменяет людей. Он берет на себя рутину, чтобы команда занималась главным.",
@@ -902,7 +902,7 @@ const translations: Translations = {
 
         // Visual Mocks in ProductSections
         'visual.sales.user': 'Сколько стоит Enterprise?',
-        'visual.sales.agent': 'Это $249/мес. Включает безлимитных агентов и аккаунт-менеджера. Хотите заказать демо?',
+        'visual.sales.agent': 'Это 39 900 ₽/мес. Включает безлимитных агентов и аккаунт-менеджера. Хотите заказать демо?',
         'visual.sales.tag': 'Лид Квалифицирован: Горячий 🔥',
 
         'visual.reception.calendar': 'Календарь',
@@ -981,11 +981,11 @@ const translations: Translations = {
         'advisor.active': 'Активен сейчас',
         'advisor.cost': 'Стоимость',
         'advisor.human': 'Человеческий эквивалент',
-        'advisor.price.89': '$89/мес',
-        'advisor.price.5000': '$5,000/мес',
-        'advisor.price.3500': '$3,500/мес',
-        'advisor.price.3000': '$3,000/мес',
-        'advisor.price.4500': '$4,500/мес',
+        'advisor.price.89': '24 900 ₽/мес',
+        'advisor.price.5000': '500 000 ₽/мес',
+        'advisor.price.3500': '350 000 ₽/мес',
+        'advisor.price.3000': '300 000 ₽/мес',
+        'advisor.price.4500': '450 000 ₽/мес',
 
         // Agents RU
         'advisor.agent.sales.name': 'Менеджер Продаж', 'advisor.agent.sales.role': 'Рост Выручки',
@@ -1005,7 +1005,7 @@ const translations: Translations = {
         'advisor.agent.recruiter.benefit': "Приносит идеального кандидата на блюдечке.",
 
         // Visuals RU
-        'advisor.visual.sales.p1.title': 'Платеж Stripe: $1,200', 'advisor.visual.sales.p1.sub': 'Закрыто из WhatsApp',
+        'advisor.visual.sales.p1.title': 'Платеж Stripe: 120 000 ₽', 'advisor.visual.sales.p1.sub': 'Закрыто из WhatsApp',
         'advisor.visual.sales.p2.title': 'Лид Квалифицирован', 'advisor.visual.sales.p2.sub': 'Бюджет: Enterprise • Готов',
         'advisor.visual.sales.p3.title': 'Демо Забронировано', 'advisor.visual.sales.p3.sub': 'Авто-запись в Календарь',
         'advisor.visual.sales.today': "Пайплайн сегодня",

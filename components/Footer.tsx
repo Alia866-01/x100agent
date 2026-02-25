@@ -131,7 +131,7 @@ const FooterHero: React.FC<{ onNavigate?: (view: string) => void }> = ({ onNavig
                                 <div>
                                     <div className="flex justify-between items-center mb-2">
                                         <span className="text-gray-400 text-sm">{t('footer.card.revenue')}</span>
-                                        <span className="text-white font-mono text-lg">$45,200 <span className="text-green-400 text-xs">▲</span></span>
+                                        <span className="text-white font-mono text-lg">4,5 млн ₽ <span className="text-green-400 text-xs">▲</span></span>
                                     </div>
                                     <div className="w-full bg-white/5 rounded-full h-2">
                                         <div className="bg-green-500 h-2 rounded-full w-[65%] shadow-[0_0_15px_rgba(34,197,94,0.5)]"></div>

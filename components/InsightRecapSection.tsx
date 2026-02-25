@@ -165,8 +165,8 @@ const InsightRecapSection: React.FC = () => {
                                     <div className="bg-[#1C1C1E] rounded-xl p-5 mb-6 border border-white/5">
                                         <div className="text-[10px] uppercase tracking-widest text-gray-500 mb-4 font-mono font-medium">{t('recap.right.recents')}</div>
                                         <div className="space-y-5">
-                                            <TransactionItem name={t('recap.tx.ent')} date={t('recap.tx.ent_sub')} amount="$1,200" />
-                                            <TransactionItem name={t('recap.tx.start')} date={t('recap.tx.start_sub')} amount="$299" />
+                                            <TransactionItem name={t('recap.tx.ent')} date={t('recap.tx.ent_sub')} amount="120 000 ₽" />
+                                            <TransactionItem name={t('recap.tx.start')} date={t('recap.tx.start_sub')} amount="29 900 ₽" />
                                             <TransactionItem name={t('recap.tx.consult')} date={t('recap.tx.consult_sub')} amount="Free" />
                                         </div>
                                     </div>

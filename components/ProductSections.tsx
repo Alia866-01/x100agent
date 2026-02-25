@@ -904,20 +904,20 @@ export const PricingSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 text-left">
                     <PricingCard
                         title={t('pricing.starter')}
-                        price="$50"
+                        price="14 900 ₽"
                         subtitle={t('pricing.starter.sub')}
                         features={[t('pricing.starter.f1'), t('pricing.starter.f2'), t('pricing.starter.f3'), t('pricing.starter.f4')]}
                     />
                     <PricingCard
                         title={t('pricing.pro')}
-                        price="$120"
+                        price="24 900 ₽"
                         subtitle={t('pricing.pro.sub')}
                         features={[t('pricing.pro.f1'), t('pricing.pro.f2'), t('pricing.pro.f3'), t('pricing.pro.f4'), t('pricing.pro.f5')]}
                         highlight={true}
                     />
                     <PricingCard
                         title={t('pricing.biz')}
-                        price="$350"
+                        price="39 900 ₽"
                         subtitle={t('pricing.biz.sub')}
                         features={[t('pricing.biz.f1'), t('pricing.biz.f2'), t('pricing.biz.f3'), t('pricing.biz.f4'), t('pricing.biz.f5')]}
                     />
