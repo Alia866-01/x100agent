@@ -4,7 +4,7 @@ FROM node:20-alpine AS frontend-build
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm install --legacy-peer-deps
 
 COPY index.html index.tsx index.css vite.config.ts tsconfig.json postcss.config.js tailwind.config.js ./
 COPY components/ ./components/
