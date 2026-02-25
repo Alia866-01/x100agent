@@ -35,11 +35,9 @@ RUN npm run build
 # ===== Stage 2: Final image =====
 FROM python:3.11-slim
 
-# Install nginx + system deps
+# Install nginx + system deps (no build-essential — use binary wheels only)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     nginx \
-    build-essential \
-    libpq-dev \
     supervisor \
     curl \
     && rm -rf /var/lib/apt/lists/*
@@ -48,7 +46,7 @@ WORKDIR /app
 
 # Python deps
 COPY backend/requirements.txt ./requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --prefer-binary -r requirements.txt
 
 # Backend code
 COPY backend/ ./backend/
