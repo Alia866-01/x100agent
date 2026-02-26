@@ -44,9 +44,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-# Python deps
+# Python deps (timeout to prevent hanging, prefer binary wheels)
 COPY backend/requirements.txt ./requirements.txt
-RUN pip install --no-cache-dir --prefer-binary -r requirements.txt
+RUN pip install --no-cache-dir --prefer-binary --timeout 120 -r requirements.txt
 
 # Backend code
 COPY backend/ ./backend/
